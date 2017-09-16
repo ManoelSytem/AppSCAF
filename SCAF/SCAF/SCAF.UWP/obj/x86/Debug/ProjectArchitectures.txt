@@ -1,0 +1,2 @@
+c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF.UWP\SCAF.UWP.csproj;x86
+c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF\SCAF.csproj;neutral

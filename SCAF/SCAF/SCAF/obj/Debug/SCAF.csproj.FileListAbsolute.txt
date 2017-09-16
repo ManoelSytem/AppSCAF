@@ -1,0 +1,17 @@
+c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF\obj\Debug\SCAF.MainPage.xaml.g.cs
+c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF\obj\Debug\SCAF.App.xaml.g.cs
+c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF\bin\Debug\SCAF.dll
+c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF\bin\Debug\SCAF.pdb
+c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF\bin\Debug\Xamarin.Forms.Core.dll
+c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF\bin\Debug\Xamarin.Forms.Platform.dll
+c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF\bin\Debug\Xamarin.Forms.Xaml.dll
+c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF\bin\Debug\Xamarin.Forms.Core.pdb
+c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF\bin\Debug\Xamarin.Forms.Core.xml
+c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF\bin\Debug\Xamarin.Forms.Platform.pdb
+c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF\bin\Debug\Xamarin.Forms.Xaml.pdb
+c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF\bin\Debug\Xamarin.Forms.Xaml.xml
+c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF\obj\Debug\SCAF.dll
+c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF\obj\Debug\SCAF.pdb
+c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF\obj\Debug\SCAF.Views.HomePage.xaml.g.cs
+c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF\obj\Debug\SCAF.Views.SolicitacaoCompraPage.xaml.g.cs
+c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF\obj\Debug\SCAF.csprojResolveAssemblyReference.cache
