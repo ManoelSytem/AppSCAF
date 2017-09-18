@@ -100,6 +100,8 @@ class MonoPackageManager_Resources {
 		/* We need to ensure that "SCAF.Android.dll" comes first in this list. */
 		"SCAF.Android.dll",
 		"FormsViewGroup.dll",
+		"ImageCircle.Forms.Plugin.Abstractions.dll",
+		"ImageCircle.Forms.Plugin.Android.dll",
 		"Xamarin.Android.Support.Animated.Vector.Drawable.dll",
 		"Xamarin.Android.Support.Design.dll",
 		"Xamarin.Android.Support.v4.dll",

@@ -11,7 +11,7 @@
 namespace SCAF {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("c:\\users\\netob\\documents\\visual studio 2017\\Projects\\SCAF\\SCAF\\SCAF\\App.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\netob\\DesenvolvimentoXamarin\\AppSCAF\\SCAF\\SCAF\\SCAF\\App.xaml")]
     public partial class App : global::Xamarin.Forms.Application {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

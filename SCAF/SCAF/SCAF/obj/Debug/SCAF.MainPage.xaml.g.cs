@@ -11,8 +11,7 @@
 namespace SCAF {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("c:\\users\\netob\\documents\\visual studio 2017\\Projects\\SCAF\\SCAF\\SCAF\\MainPage.xaml" +
-        "")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\netob\\DesenvolvimentoXamarin\\AppSCAF\\SCAF\\SCAF\\SCAF\\MainPage.xaml")]
     public partial class MainPage : global::Xamarin.Forms.MasterDetailPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

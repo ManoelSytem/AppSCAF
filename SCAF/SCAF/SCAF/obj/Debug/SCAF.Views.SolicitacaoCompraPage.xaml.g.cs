@@ -11,8 +11,8 @@
 namespace SCAF.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("c:\\users\\netob\\documents\\visual studio 2017\\Projects\\SCAF\\SCAF\\SCAF\\Views\\Solicit" +
-        "acaoCompraPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\netob\\DesenvolvimentoXamarin\\AppSCAF\\SCAF\\SCAF\\SCAF\\Views\\SolicitacaoCom" +
+        "praPage.xaml")]
     public partial class SolicitacaoCompraPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

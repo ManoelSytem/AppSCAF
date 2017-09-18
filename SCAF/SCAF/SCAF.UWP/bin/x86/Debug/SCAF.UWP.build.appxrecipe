@@ -10,22 +10,22 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>fcf45eb1-6cdf-4657-b353-713fd2bba5de</PackageIdentityName>
     <PackageIdentityPublisher>CN=netob</PackageIdentityPublisher>
-    <IntermediateOutputPath>c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF.UWP\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF.UWP\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\bin\x86\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF.UWP\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF.UWP\bin\x86\Debug\SCAF.UWP.exe">
+    <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\bin\x86\Debug\SCAF.UWP.exe">
       <PackagePath>entrypoint\SCAF.UWP.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\netob\.nuget\packages\Microsoft.CSharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
@@ -370,6 +370,12 @@
     <AppxPackagedFile Include="C:\Users\netob\.nuget\packages\System.Xml.XmlSerializer\4.0.11\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\netob\.nuget\packages\Xam.Plugins.Forms.ImageCircle\1.8.1\lib\UAP10\ImageCircle.Forms.Plugin.Abstractions.dll">
+      <PackagePath>ImageCircle.Forms.Plugin.Abstractions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\netob\.nuget\packages\Xam.Plugins.Forms.ImageCircle\1.8.1\lib\UAP10\ImageCircle.Forms.Plugin.UWP.dll">
+      <PackagePath>ImageCircle.Forms.Plugin.UWP.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\netob\.nuget\packages\Xamarin.Forms\2.3.4.224\lib\uap10.0\Xamarin.Forms.Core.dll">
       <PackagePath>Xamarin.Forms.Core.dll</PackagePath>
     </AppxPackagedFile>
@@ -382,155 +388,201 @@
     <AppxPackagedFile Include="C:\Users\netob\.nuget\packages\Xamarin.Forms\2.3.4.224\lib\uap10.0\Xamarin.Forms.Xaml.dll">
       <PackagePath>Xamarin.Forms.Xaml.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF\bin\Debug\SCAF.dll">
+    <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF\bin\Debug\SCAF.dll">
       <PackagePath>SCAF.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF.UWP\Assets\sc_icon.png">
-      <PackagePath>Assets\sc_icon.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\Assets\LargeTile.scale-100.png">
+      <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF.UWP\Assets\Square44x44Logo.targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\Assets\LargeTile.scale-125.png">
+      <PackagePath>Assets\LargeTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\Assets\LargeTile.scale-150.png">
+      <PackagePath>Assets\LargeTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\Assets\LargeTile.scale-200.png">
+      <PackagePath>Assets\LargeTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\Assets\LargeTile.scale-400.png">
+      <PackagePath>Assets\LargeTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\Assets\SmallTile.scale-100.png">
+      <PackagePath>Assets\SmallTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\Assets\SmallTile.scale-125.png">
+      <PackagePath>Assets\SmallTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\Assets\SmallTile.scale-150.png">
+      <PackagePath>Assets\SmallTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\Assets\SmallTile.scale-200.png">
+      <PackagePath>Assets\SmallTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\Assets\SmallTile.scale-400.png">
+      <PackagePath>Assets\SmallTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\Assets\Square44x44Logo.targetsize-16.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF.UWP\Assets\Square44x44Logo.targetsize-24.png">
+    <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\Assets\Square44x44Logo.targetsize-24.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF.UWP\Assets\Square44x44Logo.targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\Assets\Square44x44Logo.targetsize-256.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF.UWP\Assets\Square44x44Logo.targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\Assets\Square44x44Logo.targetsize-32.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-32.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF.UWP\Assets\Square44x44Logo.targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\Assets\Square44x44Logo.targetsize-48.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF.UWP\Assets\LockScreenLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\Assets\LockScreenLogo.scale-100.png">
       <PackagePath>Assets\LockScreenLogo.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF.UWP\Assets\LockScreenLogo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\Assets\LockScreenLogo.scale-125.png">
       <PackagePath>Assets\LockScreenLogo.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF.UWP\Assets\LockScreenLogo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\Assets\LockScreenLogo.scale-150.png">
       <PackagePath>Assets\LockScreenLogo.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF.UWP\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF.UWP\Assets\LockScreenLogo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\Assets\LockScreenLogo.scale-400.png">
       <PackagePath>Assets\LockScreenLogo.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF.UWP\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF.UWP\Assets\SplashScreen.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\Assets\SplashScreen.scale-125.png">
       <PackagePath>Assets\SplashScreen.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF.UWP\Assets\SplashScreen.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\Assets\SplashScreen.scale-150.png">
       <PackagePath>Assets\SplashScreen.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF.UWP\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF.UWP\Assets\SplashScreen.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\Assets\SplashScreen.scale-400.png">
       <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF.UWP\Assets\Square150x150Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\Assets\Square150x150Logo.scale-100.png">
       <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF.UWP\Assets\Square150x150Logo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\Assets\Square150x150Logo.scale-125.png">
       <PackagePath>Assets\Square150x150Logo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF.UWP\Assets\Square150x150Logo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\Assets\Square150x150Logo.scale-150.png">
       <PackagePath>Assets\Square150x150Logo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF.UWP\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF.UWP\Assets\Square150x150Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\Assets\Square150x150Logo.scale-400.png">
       <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF.UWP\Assets\Square44x44Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\Assets\Square44x44Logo.scale-100.png">
       <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF.UWP\Assets\Square44x44Logo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\Assets\Square44x44Logo.scale-125.png">
       <PackagePath>Assets\Square44x44Logo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF.UWP\Assets\Square44x44Logo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\Assets\Square44x44Logo.scale-150.png">
       <PackagePath>Assets\Square44x44Logo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF.UWP\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF.UWP\Assets\Square44x44Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\Assets\Square44x44Logo.scale-400.png">
       <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF.UWP\Assets\Square44x44Logo.targetsize-16_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\Assets\Square44x44Logo.targetsize-16_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-16_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF.UWP\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF.UWP\Assets\Square44x44Logo.targetsize-32_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\Assets\Square44x44Logo.targetsize-32_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-32_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF.UWP\Assets\Square44x44Logo.targetsize-48_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\Assets\Square44x44Logo.targetsize-48_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-48_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF.UWP\Assets\Square44x44Logo.targetsize-256_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\Assets\Square44x44Logo.targetsize-256_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-256_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF.UWP\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF.UWP\Assets\Wide310x150Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\Assets\Wide310x150Logo.scale-100.png">
       <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF.UWP\Assets\Wide310x150Logo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\Assets\Wide310x150Logo.scale-125.png">
       <PackagePath>Assets\Wide310x150Logo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF.UWP\Assets\Wide310x150Logo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\Assets\Wide310x150Logo.scale-150.png">
       <PackagePath>Assets\Wide310x150Logo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF.UWP\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF.UWP\Assets\Wide310x150Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\Assets\Wide310x150Logo.scale-400.png">
       <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF.UWP\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\bg.jpg">
+      <PackagePath>bg.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF\Resource\backMenu.jpg">
+      <PackagePath>SCAF\Resource\backMenu.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF\Resource\bg.jpg">
+      <PackagePath>SCAF\Resource\bg.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF.UWP\bin\x86\Debug\SCAF.UWP.xr.xml">
+    <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\bin\x86\Debug\SCAF.UWP.xr.xml">
       <PackagePath>SCAF.UWP.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\Windows Kits\10\UnionMetadata\10.0.15063.0\Windows.winmd">
@@ -542,11 +594,11 @@
     <AppxPackagedFile Include="C:\Users\netob\.nuget\packages\Xamarin.Forms\2.3.4.224\lib\uap10.0\Xamarin.Forms.Platform.UAP\Properties\Xamarin.Forms.Platform.UAP.rd.xml">
       <PackagePath>Xamarin.Forms.Platform.UAP\Properties\Xamarin.Forms.Platform.UAP.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF.UWP\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF.UWP\bin\x86\Debug\Core\SCAF.UWP.exe">
+    <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\bin\x86\Debug\Core\SCAF.UWP.exe">
       <PackagePath>SCAF.UWP.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

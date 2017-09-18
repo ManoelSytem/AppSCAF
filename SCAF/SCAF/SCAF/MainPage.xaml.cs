@@ -13,10 +13,8 @@ namespace SCAF
         public MainPage()
         {
             InitializeComponent();
-
             _menuLista = ItemService.GetMenuItens();
             navigationDrawerList.ItemsSource = _menuLista;
-
             Detail = new NavigationPage((Page)Activator.CreateInstance(typeof(HomePage)));
         }
 

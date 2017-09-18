@@ -1,10 +1,19 @@
 WinMetadata\Windows.winmd
+Assets\LargeTile.scale-100.png
+Assets\LargeTile.scale-125.png
+Assets\LargeTile.scale-150.png
+Assets\LargeTile.scale-200.png
+Assets\LargeTile.scale-400.png
 Assets\LockScreenLogo.scale-100.png
 Assets\LockScreenLogo.scale-125.png
 Assets\LockScreenLogo.scale-150.png
 Assets\LockScreenLogo.scale-200.png
 Assets\LockScreenLogo.scale-400.png
-Assets\sc_icon.png
+Assets\SmallTile.scale-100.png
+Assets\SmallTile.scale-125.png
+Assets\SmallTile.scale-150.png
+Assets\SmallTile.scale-200.png
+Assets\SmallTile.scale-400.png
 Assets\SplashScreen.scale-100.png
 Assets\SplashScreen.scale-125.png
 Assets\SplashScreen.scale-150.png
@@ -36,5 +45,6 @@ Assets\Wide310x150Logo.scale-125.png
 Assets\Wide310x150Logo.scale-150.png
 Assets\Wide310x150Logo.scale-200.png
 Assets\Wide310x150Logo.scale-400.png
+bg.jpg
 SCAF.UWP.xr.xml
 Properties\Default.rd.xml

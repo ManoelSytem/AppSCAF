@@ -2,6 +2,10 @@ SCAF.Droid.MainActivity, SCAF.Android;md552de5064c9ea5ae35ba5a6808930d6eb.MainAc
 SCAF.Droid.MainActivity, SCAF.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md552de5064c9ea5ae35ba5a6808930d6eb.MainActivity
 SCAF.Droid.MainActivity;md552de5064c9ea5ae35ba5a6808930d6eb.MainActivity
 scaf.droid.MainActivity;md552de5064c9ea5ae35ba5a6808930d6eb.MainActivity
+ImageCircle.Forms.Plugin.Droid.ImageCircleRenderer, ImageCircle.Forms.Plugin.Android;md5f99670a967ca5f40091da02b64448d9f.ImageCircleRenderer
+ImageCircle.Forms.Plugin.Droid.ImageCircleRenderer, ImageCircle.Forms.Plugin.Android, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null;md5f99670a967ca5f40091da02b64448d9f.ImageCircleRenderer
+ImageCircle.Forms.Plugin.Droid.ImageCircleRenderer;md5f99670a967ca5f40091da02b64448d9f.ImageCircleRenderer
+imagecircle.forms.plugin.droid.ImageCircleRenderer;md5f99670a967ca5f40091da02b64448d9f.ImageCircleRenderer
 Android.Support.Design.Widget.Snackbar/SnackbarActionClickImplementor, Xamarin.Android.Support.Design;android.support.design.widget.Snackbar_SnackbarActionClickImplementor
 Android.Support.Design.Widget.Snackbar+SnackbarActionClickImplementor, Xamarin.Android.Support.Design, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;android.support.design.widget.Snackbar_SnackbarActionClickImplementor
 Android.Support.Design.Widget.Snackbar.SnackbarActionClickImplementor;android.support.design.widget.Snackbar_SnackbarActionClickImplementor

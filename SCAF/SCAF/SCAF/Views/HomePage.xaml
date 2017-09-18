@@ -2,12 +2,12 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SCAF.Views.HomePage"
-             Title="Menu - SCAF">
+             Title="Menu">
 
     <StackLayout VerticalOptions="Center">
-        <Label Text="Bem Vindo ao SCAF" TextColor="Blue"
+        <Label Text="BEM VINDO AO SCAF" TextColor="#f25a0e"
                HorizontalOptions="Center"
-               FontSize="Large"/>
+               FontSize="Medium"/>
         <Image Source="home_b2b.png" Aspect="AspectFit" />
     </StackLayout>
 </ContentPage>

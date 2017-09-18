@@ -1,6 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <AppIconSource>C:\Users\netob\Desktop\icon.png</AppIconSource>
+    <AppIconSource>C:\Users\netob\Desktop\home_b2b.png</AppIconSource>
+    <Source>C:\Users\netob\Desktop\home_b2b.png</Source>
+    <SmallTileSource>C:\Users\netob\Desktop\home_b2b.png</SmallTileSource>
+    <MediumTileSource>C:\Users\netob\Desktop\home_b2b.png</MediumTileSource>
+    <WideTileSource>C:\Users\netob\Desktop\home_b2b.png</WideTileSource>
+    <LargeTileSource>C:\Users\netob\Desktop\home_b2b.png</LargeTileSource>
+    <SplashScreenSource>C:\Users\netob\Desktop\home_b2b.png</SplashScreenSource>
   </PropertyGroup>
 </Project>
