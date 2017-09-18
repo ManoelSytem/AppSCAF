@@ -39,7 +39,7 @@
                                      VerticalOptions="Center" />
 
                                     <Label Text="{Binding Title}"
-                                       FontSize="Medium"
+                                       FontSize="Small"
                                        VerticalOptions="Center"
                                        TextColor="Black"/>
                                 </StackLayout>

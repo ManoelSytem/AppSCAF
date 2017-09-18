@@ -116,3 +116,7 @@ C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.Android\bin\Debug\I
 C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.Android\bin\Debug\ImageCircle.Forms.Plugin.Android.dll.mdb
 C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.Android\obj\Debug\android\assets\ImageCircle.Forms.Plugin.Abstractions.dll.mdb
 C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.Android\obj\Debug\android\assets\ImageCircle.Forms.Plugin.Android.dll.mdb
+C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.Android\obj\Debug\res\drawable\scaf_logo.jpg
+C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.Android\obj\Debug\res\drawable-hdpi\scaf_logo.jpg
+C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.Android\obj\Debug\res\drawable-xhdpi\scaf_logo.jpg
+C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.Android\obj\Debug\res\drawable-xxhdpi\scaf_logo.jpg

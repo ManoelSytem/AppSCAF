@@ -144,8 +144,12 @@
     <AndroidResource Include="Resources\drawable\backMenu.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\SCAF_logo.jpg" />
+    <AndroidResource Include="Resources\drawable-xhdpi\SCAF_logo.jpg" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\SCAF_logo.jpg" />
     <Content Include="Resources\drawable\bg.jpg" />
     <AndroidResource Include="Resources\drawable\profile.png" />
+    <AndroidResource Include="Resources\drawable\SCAF_logo.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets" Condition="Exists('..\..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets')" />

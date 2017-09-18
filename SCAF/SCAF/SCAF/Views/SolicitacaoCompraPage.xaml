@@ -5,7 +5,7 @@
              Title="Solicitações de Compras">
 
     <StackLayout VerticalOptions="Center">
-        <Label Text="Solicitações de Compras" TextColor="Blue"
+        <Label Text="Solicitações de Compras" TextColor="#f25a0e"
                FontAttributes="Bold"
                HorizontalOptions="Center"
                FontSize="Large"/>
