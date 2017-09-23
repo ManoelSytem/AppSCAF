@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SCAF.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,7 +14,7 @@ namespace SCAF
         {
             InitializeComponent();
 
-            MainPage = new SCAF.MainPage();
+            MainPage = new LoginPage();
         }
 
         protected override void OnStart()

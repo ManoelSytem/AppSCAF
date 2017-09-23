@@ -35,3 +35,4 @@ C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF\obj\Debug\SCAF.cspr
 C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF\bin\Debug\ImageCircle.Forms.Plugin.Abstractions.dll
 C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF\bin\Debug\ImageCircle.Forms.Plugin.Abstractions.pdb
 C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF\bin\Debug\ImageCircle.Forms.Plugin.Abstractions.xml
+C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF\obj\Debug\SCAF.Views.LoginPage.xaml.g.cs

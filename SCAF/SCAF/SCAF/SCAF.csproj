@@ -41,6 +41,9 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Model\Constats.cs" />
+    <Compile Include="Model\Token.cs" />
+    <Compile Include="Model\User.cs" />
     <Compile Include="Services\ItemService.cs" />
     <Compile Include="Model\MasterPageItem.cs" />
     <Compile Include="Model\SolicitacaoCompra.cs" />
@@ -48,6 +51,9 @@
     <Compile Include="Services\SolicitacaoCompraService.cs" />
     <Compile Include="Views\HomePage.xaml.cs">
       <DependentUpon>HomePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LoginPage.xaml.cs">
+      <DependentUpon>LoginPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\SolicitacaoCompraPage.xaml.cs">
       <DependentUpon>SolicitacaoCompraPage.xaml</DependentUpon>
@@ -106,7 +112,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resource\backMenu.jpg" />
-    <Content Include="Resource\bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\LoginPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />

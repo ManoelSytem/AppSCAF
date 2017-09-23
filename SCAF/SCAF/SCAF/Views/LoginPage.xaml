@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SCAF.Views.LoginPage">
+    <StackLayout x:Name="MasterLayout">
+        
+        <StackLayout x:Name="LoginStack" VerticalOptions="FillAndExpand">
+            <Image x:Name="LoginIncon" Source="SCAF_logo.jpg" Margin="0,80,0,0"/>
+        </StackLayout>
+
+        <StackLayout x:Name="LoginEntryStack" VerticalOptions="StartAndExpand">
+            <StackLayout.Padding>
+                <OnIdiom x:TypeArguments="Thickness">
+                    <OnIdiom.Phone>40,0,40,0</OnIdiom.Phone>
+                    <OnIdiom.Tablet>140,150,140,0</OnIdiom.Tablet>
+                </OnIdiom>
+            </StackLayout.Padding>
+
+            <ActivityIndicator x:Name="ActivitySpinner"  Color="Red" IsRunning="True"/>
+
+            <Label x:Name="Lbl_Login"   Text="Login" />
+            <Entry x:Name="Entry_Login" Placeholder="Login"/>
+            <Label x:Name="Lbl_Senha" Text="Senha" />
+            <Entry x:Name="Entry_Senha" Placeholder="Senha"/>
+            <Button x:Name="Button_Entrar"  Text="Entrar" Clicked="EntrarProcedure"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

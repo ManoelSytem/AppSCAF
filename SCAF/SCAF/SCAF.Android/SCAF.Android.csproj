@@ -147,7 +147,6 @@
     <AndroidResource Include="Resources\drawable-hdpi\SCAF_logo.jpg" />
     <AndroidResource Include="Resources\drawable-xhdpi\SCAF_logo.jpg" />
     <AndroidResource Include="Resources\drawable-xxhdpi\SCAF_logo.jpg" />
-    <Content Include="Resources\drawable\bg.jpg" />
     <AndroidResource Include="Resources\drawable\profile.png" />
     <AndroidResource Include="Resources\drawable\SCAF_logo.jpg" />
   </ItemGroup>
