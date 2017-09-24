@@ -21,7 +21,7 @@
             <Label x:Name="Lbl_Login"   Text="Login" />
             <Entry x:Name="Entry_Login" Placeholder="Login"/>
             <Label x:Name="Lbl_Senha" Text="Senha" />
-            <Entry x:Name="Entry_Senha" Placeholder="Senha"/>
+            <Entry x:Name="Entry_Senha"  IsPassword="true" Placeholder="Senha"/>
             <Button x:Name="Button_Entrar"  Text="Entrar" Clicked="EntrarProcedure"/>
         </StackLayout>
     </StackLayout>

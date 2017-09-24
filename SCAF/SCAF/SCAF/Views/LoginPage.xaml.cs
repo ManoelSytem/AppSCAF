@@ -1,9 +1,5 @@
 ﻿using SCAF.Model;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -13,6 +9,7 @@ namespace SCAF.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class LoginPage : ContentPage
     {
+       
         public LoginPage()
         {
             InitializeComponent();
@@ -36,12 +33,15 @@ namespace SCAF.Views
             User user = new User(Entry_Login.Text, Entry_Senha.Text);
             if(user.CheckInformacao())
             {
-                DisplayAlert("Login", "Login Realizado com Sucesso!", "Ok");
+               
+                App.UserDataBase.SaveUser(user);
+                DisplayAlert("Login", "Login Realizado com Sucesso!"+user.Username+"", "Ok");
             }
             else
             {
                 DisplayAlert("Login", "Usuário ou Senha estão Incorretos!", "Ok");
             }
+            
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using SCAF.Views;
+﻿using SCAF.Data;
+using SCAF.Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,6 +11,8 @@ namespace SCAF
 {
     public partial class App : Application
     {
+        static TokenDataBaseControl tokenDataBase;
+        static UserDatabaseController UserdataBase;
         public App()
         {
             InitializeComponent();
@@ -30,6 +33,30 @@ namespace SCAF
         protected override void OnResume()
         {
             // Handle when your app resumes
+        }
+
+        public static UserDatabaseController UserDataBase
+        {
+            get
+            {
+                if (UserdataBase == null)
+                {
+                    UserdataBase = new UserDatabaseController();
+                }
+                return UserdataBase;
+            }
+        }
+
+        public static TokenDataBaseControl TokenDataBase
+        {
+            get
+            {
+                if (UserdataBase == null)
+                {
+                    tokenDataBase = new TokenDataBaseControl();
+                }
+                return tokenDataBase;
+            }
         }
     }
 }

@@ -120,3 +120,11 @@ C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.Android\obj\Debug\r
 C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.Android\obj\Debug\res\drawable-hdpi\scaf_logo.jpg
 C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.Android\obj\Debug\res\drawable-xhdpi\scaf_logo.jpg
 C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.Android\obj\Debug\res\drawable-xxhdpi\scaf_logo.jpg
+C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.Android\bin\Debug\SQLite-net.dll
+C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.Android\bin\Debug\SQLitePCLRaw.batteries_green.dll
+C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.Android\bin\Debug\SQLitePCLRaw.batteries_v2.dll
+C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.Android\bin\Debug\SQLitePCLRaw.core.dll
+C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.Android\bin\Debug\SQLitePCLRaw.lib.e_sqlite3.dll
+C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.Android\bin\Debug\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.Android\bin\Debug\SQLite-net.pdb
+C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.Android\bin\Debug\SQLite-net.xml
