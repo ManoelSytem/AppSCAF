@@ -128,3 +128,14 @@ C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.Android\bin\Debug\S
 C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.Android\bin\Debug\SQLitePCLRaw.provider.e_sqlite3.dll
 C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.Android\bin\Debug\SQLite-net.pdb
 C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.Android\bin\Debug\SQLite-net.xml
+C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.Android\bin\Debug\Newtonsoft.Json.dll
+C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.Android\bin\Debug\Plugin.Settings.Abstractions.dll
+C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.Android\bin\Debug\Plugin.Settings.dll
+C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.Android\bin\Debug\Xamarin.Android.Support.CustomTabs.dll
+C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.Android\bin\Debug\Xamarin.Auth.dll
+C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.Android\bin\Debug\Newtonsoft.Json.xml
+C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.Android\bin\Debug\Plugin.Settings.pdb
+C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.Android\bin\Debug\Plugin.Settings.xml
+C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.Android\bin\Debug\Plugin.Settings.Abstractions.pdb
+C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.Android\bin\Debug\Plugin.Settings.Abstractions.xml
+C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.Android\bin\Debug\Xamarin.Auth.pdb

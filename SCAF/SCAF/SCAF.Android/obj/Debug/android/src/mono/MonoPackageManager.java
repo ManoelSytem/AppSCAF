@@ -102,6 +102,9 @@ class MonoPackageManager_Resources {
 		"FormsViewGroup.dll",
 		"ImageCircle.Forms.Plugin.Abstractions.dll",
 		"ImageCircle.Forms.Plugin.Android.dll",
+		"Newtonsoft.Json.dll",
+		"Plugin.Settings.Abstractions.dll",
+		"Plugin.Settings.dll",
 		"SQLite-net.dll",
 		"SQLitePCLRaw.batteries_green.dll",
 		"SQLitePCLRaw.batteries_v2.dll",
@@ -109,6 +112,7 @@ class MonoPackageManager_Resources {
 		"SQLitePCLRaw.lib.e_sqlite3.dll",
 		"SQLitePCLRaw.provider.e_sqlite3.dll",
 		"Xamarin.Android.Support.Animated.Vector.Drawable.dll",
+		"Xamarin.Android.Support.CustomTabs.dll",
 		"Xamarin.Android.Support.Design.dll",
 		"Xamarin.Android.Support.v4.dll",
 		"Xamarin.Android.Support.v7.AppCompat.dll",
@@ -116,11 +120,14 @@ class MonoPackageManager_Resources {
 		"Xamarin.Android.Support.v7.MediaRouter.dll",
 		"Xamarin.Android.Support.v7.RecyclerView.dll",
 		"Xamarin.Android.Support.Vector.Drawable.dll",
+		"Xamarin.Auth.dll",
 		"Xamarin.Forms.Core.dll",
 		"Xamarin.Forms.Platform.Android.dll",
 		"Xamarin.Forms.Platform.dll",
 		"Xamarin.Forms.Xaml.dll",
 		"SCAF.dll",
+		"PCLCrypto.dll",
+		"Validation.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

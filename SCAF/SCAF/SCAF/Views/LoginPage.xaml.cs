@@ -1,4 +1,6 @@
-﻿using SCAF.Model;
+﻿using Android.Views;
+using SCAF.Helpers;
+using SCAF.Model;
 using System;
 
 using Xamarin.Forms;
@@ -18,12 +20,17 @@ namespace SCAF.Views
 
         private void Init()
         {
+            if (string.IsNullOrEmpty(Settings.Accesstoken))
+            {
+                DisplayAlert("Login", "Usuário ou Senha estão Incorretos!", "Ok");
+            }
+
             BackgroundColor = Constats.BackgroundColor;
             Lbl_Login.TextColor = Constats.MainTextColor;
             Lbl_Senha.TextColor = Constats.MainTextColor;
             ActivitySpinner.IsVisible = false;
             LoginIncon.HeightRequest = Constats.LoginIconAltura;
-
+            //Button_Entrar.Visibility = ViewStates.Gone;
             Entry_Login.Completed += (s,e) => Entry_Senha.Focus();
             Entry_Senha.Completed += (s, e) => EntrarProcedure(s,e);
         }
@@ -34,7 +41,7 @@ namespace SCAF.Views
             if(user.CheckInformacao())
             {
                
-                App.UserDataBase.SaveUser(user);
+                //App.UserDataBase.SaveUser(user);
                 DisplayAlert("Login", "Login Realizado com Sucesso!"+user.Username+"", "Ok");
             }
             else

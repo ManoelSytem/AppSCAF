@@ -1,9 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:SCAF.ViewModels;assembly=SCAF"
              x:Class="SCAF.Views.LoginPage">
+    <ContentPage.BindingContext>
+        <viewModels:LoginViewModel/>
+    </ContentPage.BindingContext>
     <StackLayout x:Name="MasterLayout">
-        
+
         <StackLayout x:Name="LoginStack" VerticalOptions="FillAndExpand">
             <Image x:Name="LoginIncon" Source="SCAF_logo.jpg" Margin="0,80,0,0"/>
         </StackLayout>
@@ -17,12 +21,19 @@
             </StackLayout.Padding>
 
             <ActivityIndicator x:Name="ActivitySpinner"  Color="Red" IsRunning="True"/>
-
+            <Label x:Name="lblMessage"
+              Text="{Binding Message }"
+                     Font="Bold,Medium" />
             <Label x:Name="Lbl_Login"   Text="Login" />
-            <Entry x:Name="Entry_Login" Placeholder="Login"/>
+            <Entry Text="{Binding Username}" x:Name="Entry_Login" Placeholder="Login"/>
             <Label x:Name="Lbl_Senha" Text="Senha" />
-            <Entry x:Name="Entry_Senha"  IsPassword="true" Placeholder="Senha"/>
-            <Button x:Name="Button_Entrar"  Text="Entrar" Clicked="EntrarProcedure"/>
+            <Entry Text="{Binding Password}" x:Name="Entry_Senha"  IsPassword="true" Placeholder="Senha"/>
+            <Button Command="{Binding LoginCommand}"
+                    Text="Login"
+                    BackgroundColor="DodgerBlue"
+                    TextColor="White"
+                    FontSize="30"
+                    x:Name="Button_Bindig"  />
         </StackLayout>
     </StackLayout>
 </ContentPage>

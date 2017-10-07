@@ -1,4 +1,5 @@
 ﻿using SCAF.Data;
+using SCAF.Helpers;
 using SCAF.Views;
 using System;
 using System.Collections.Generic;
@@ -16,8 +17,24 @@ namespace SCAF
         public App()
         {
             InitializeComponent();
+            SetMainPage();
+        }
 
-            MainPage = new LoginPage();
+        private void SetMainPage()
+        {
+            if (!string.IsNullOrEmpty(Settings.Accesstoken))
+            {
+                MainPage = new NavigationPage(new HomePage());
+            }
+            else if (!string.IsNullOrEmpty(Settings.Username)
+                     && !string.IsNullOrEmpty(Settings.Password))
+            {
+                MainPage = new NavigationPage(new LoginPage());
+            }
+            else
+            {
+                MainPage = new NavigationPage(new LoginPage());
+            }
         }
 
         protected override void OnStart()
