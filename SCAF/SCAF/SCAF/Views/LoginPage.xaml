@@ -23,7 +23,7 @@
             <ActivityIndicator x:Name="ActivitySpinner"  Color="Red" IsRunning="True"/>
             <Label x:Name="lblMessage"
               Text="{Binding Message }"
-                     Font="Bold,Medium" />
+                     Font="Small" />
             <Label x:Name="Lbl_Login"   Text="Login" />
             <Entry Text="{Binding Username}" x:Name="Entry_Login" Placeholder="Login"/>
             <Label x:Name="Lbl_Senha" Text="Senha" />

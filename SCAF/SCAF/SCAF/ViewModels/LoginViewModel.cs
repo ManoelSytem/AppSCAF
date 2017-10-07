@@ -10,7 +10,7 @@ using Xamarin.Forms;
 
 namespace SCAF.ViewModels
 {
-    public class LoginViewModel
+    public class LoginViewModel : BaseViewModel
     {
         private readonly ApiServices _apiServices = new ApiServices();
 
@@ -18,7 +18,17 @@ namespace SCAF.ViewModels
 
         public string Password { get; set; }
 
-        public string Message { get; set; }
+        private string _message;
+        public string Message {
+            get
+            {
+                return _message;
+            }
+            set
+            {
+                SetProperty(ref _message, value);
+            }
+        }
 
         public ICommand LoginCommand
         {
@@ -31,7 +41,7 @@ namespace SCAF.ViewModels
                     { Settings.Accesstoken = accesstoken; }
                     else
                     {
-                        Message = "O nome de usuário ou senha está incorreto";
+                        Message = "O nome do usuário ou senha está incorreto";
                     }
 
                 });
