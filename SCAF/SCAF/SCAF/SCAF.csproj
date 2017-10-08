@@ -156,6 +156,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resource\backMenu.jpg" />
+    <AndroidResource Include="Resource\SCAF_logo.jpg" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\LoginPage.xaml">

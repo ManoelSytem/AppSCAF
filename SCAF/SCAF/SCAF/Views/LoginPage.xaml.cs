@@ -1,6 +1,7 @@
 ﻿using SCAF.Helpers;
 using SCAF.Model;
 using SCAF.Services;
+using SCAF.ViewModels;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -28,6 +29,7 @@ namespace SCAF.Views
             //Button_Entrar.Visibility = ViewStates.Gone;
             Entry_Login.Completed += (s, e) => Entry_Senha.Focus();
             Entry_Senha.Completed += (s, e) => EntrarProcedure(s, e);
+           
         }
 
         private async void EntrarProcedure(object sender, EventArgs e)

@@ -19,6 +19,19 @@ namespace SCAF.ViewModels
 
         public string Password { get; set; }
 
+        public Image i_con;
+        public Image Icon
+        {
+            get
+            {
+                return i_con;
+            }
+            set
+            {
+                SetProperty(ref i_con, value);
+            }
+        }
+
         private string _message;
         public string Message {
             get
@@ -35,6 +48,7 @@ namespace SCAF.ViewModels
         {
             Username = Settings.Username;
             Password = Settings.Password;
+            
         }
     }
 }

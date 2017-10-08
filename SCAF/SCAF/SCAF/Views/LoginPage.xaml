@@ -2,7 +2,9 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewModels="clr-namespace:SCAF.ViewModels;assembly=SCAF"
-             x:Class="SCAF.Views.LoginPage">
+             x:Class="SCAF.Views.LoginPage"
+             >
+    
     <ContentPage.BindingContext>
         <viewModels:LoginViewModel/>
     </ContentPage.BindingContext>
@@ -26,11 +28,6 @@
                      Font="Micro" 
                      FontSize="14"
                      TextColor="#ffffff"/>
-            <Label x:Name="lblMessage"
-              Text="{Binding Message }"
-                     Font="Micro" 
-                     FontSize="14"
-                     TextColor="Yellow"/>
             <Label x:Name="Lbl_Login"   Text="Login" />
             <Entry Text="{Binding Username}" x:Name="Entry_Login" Placeholder="Login"/>
             <Label x:Name="Lbl_Senha" Text="Senha" />
