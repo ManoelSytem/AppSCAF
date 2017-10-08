@@ -1,5 +1,7 @@
-﻿using SCAF.Helpers;
+﻿using Android.Content.Res;
+using SCAF.Helpers;
 using SCAF.Services;
+using SCAF.Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +14,6 @@ namespace SCAF.ViewModels
 {
     public class LoginViewModel : BaseViewModel
     {
-        private readonly ApiServices _apiServices = new ApiServices();
 
         public string Username { get; set; }
 
@@ -28,25 +29,6 @@ namespace SCAF.ViewModels
             {
                 SetProperty(ref _message, value);
             }
-        }
-
-        public ICommand LoginCommand
-        {
-            get
-            {
-                return new Command(async () =>
-                {
-                    var accesstoken = await _apiServices.LoginAsync(Username, Password);
-                    if (!string.IsNullOrEmpty(accesstoken))
-                    { Settings.Accesstoken = accesstoken; }
-                    else
-                    {
-                        Message = "O nome do usuário ou senha está incorreto";
-                    }
-
-                });
-            }
-
         }
 
         public LoginViewModel()

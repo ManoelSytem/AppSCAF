@@ -139,3 +139,10 @@ C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.Android\bin\Debug\P
 C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.Android\bin\Debug\Plugin.Settings.Abstractions.pdb
 C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.Android\bin\Debug\Plugin.Settings.Abstractions.xml
 C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.Android\bin\Debug\Xamarin.Auth.pdb
+C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.Android\bin\Debug\SCAF.dll.config
+C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.Android\bin\Debug\Plugin.Settings.dll.mdb
+C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.Android\bin\Debug\Plugin.Settings.Abstractions.dll.mdb
+C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.Android\bin\Debug\Xamarin.Auth.dll.mdb
+C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.Android\obj\Debug\android\assets\Plugin.Settings.Abstractions.dll.mdb
+C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.Android\obj\Debug\android\assets\Plugin.Settings.dll.mdb
+C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.Android\obj\Debug\android\assets\Xamarin.Auth.dll.mdb

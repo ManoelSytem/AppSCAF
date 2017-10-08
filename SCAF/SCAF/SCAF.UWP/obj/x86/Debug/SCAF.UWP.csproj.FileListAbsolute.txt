@@ -477,3 +477,4 @@ C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\bin\x86\Debug\P
 C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\bin\x86\Debug\Plugin.Settings.dll
 C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\bin\x86\Debug\Plugin.Settings.pdb
 C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\obj\x86\Debug\Plugin.Settings.pri.xml
+C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\bin\x86\Debug\SCAF.dll.config

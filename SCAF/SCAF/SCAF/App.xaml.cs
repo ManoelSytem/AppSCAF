@@ -22,9 +22,10 @@ namespace SCAF
 
         private void SetMainPage()
         {
+            Settings.Accesstoken = "";
             if (!string.IsNullOrEmpty(Settings.Accesstoken))
             {
-                MainPage = new NavigationPage(new HomePage());
+                MainPage = new NavigationPage(new MainPage());
             }
             else if (!string.IsNullOrEmpty(Settings.Username)
                      && !string.IsNullOrEmpty(Settings.Password))

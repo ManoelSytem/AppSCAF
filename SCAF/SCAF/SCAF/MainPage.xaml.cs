@@ -1,4 +1,5 @@
 ﻿using SCAF.Model;
+using SCAF.ViewModels;
 using SCAF.Views;
 using System;
 using System.Collections.ObjectModel;

@@ -32,7 +32,7 @@ namespace SCAF.Services
             var jwt = await response.Content.ReadAsStringAsync();
 
             JObject jwtDnamic = JsonConvert.DeserializeObject<dynamic>(jwt);
-            var accessToken = jwtDnamic.Value<string>("acess_token");
+            var accessToken = jwtDnamic.Value<string>("access_token");
 
             return accessToken;
         }
