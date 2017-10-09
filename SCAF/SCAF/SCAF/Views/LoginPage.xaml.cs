@@ -40,18 +40,18 @@ namespace SCAF.Views
                 if (!string.IsNullOrEmpty(accesstoken))
                 {
                     Settings.Accesstoken = accesstoken;
-                    await Navigation.PushAsync(new MainPage());
+                    await Navigation.PushModalAsync(new MainPage());
                 }
                 else
                 {
                     await DisplayAlert("Menssagem", "O nome do usuário ou senha está incorreto", "OK");
-                    await Navigation.PushAsync(new MainPage());
+                    await Navigation.PushModalAsync(new MainPage());
                 }
             }
             catch (Exception)
             {
                 await DisplayAlert("Menssagem", "Erro Exception", "OK");
-                await Navigation.PushAsync(new MainPage());
+                await Navigation.PushModalAsync(new MainPage());
             }
         }
     }

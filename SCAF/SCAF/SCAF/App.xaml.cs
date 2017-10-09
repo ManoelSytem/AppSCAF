@@ -25,16 +25,16 @@ namespace SCAF
             Settings.Accesstoken = "";
             if (!string.IsNullOrEmpty(Settings.Accesstoken))
             {
-                MainPage = new NavigationPage(new MainPage());
+                MainPage = new MainPage();
             }
             else if (!string.IsNullOrEmpty(Settings.Username)
                      && !string.IsNullOrEmpty(Settings.Password))
             {
-                MainPage = new NavigationPage(new LoginPage());
+                MainPage =  new LoginPage();
             }
             else
             {
-                MainPage = new NavigationPage(new LoginPage());
+                MainPage = new LoginPage();
             }
         }
 
