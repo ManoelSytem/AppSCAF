@@ -1,13 +1,4 @@
-﻿using Android.Content.Res;
-using SCAF.Helpers;
-using SCAF.Services;
-using SCAF.Views;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Input;
+﻿using SCAF.Helpers;
 using Xamarin.Forms;
 
 namespace SCAF.ViewModels
@@ -19,8 +10,8 @@ namespace SCAF.ViewModels
 
         public string Password { get; set; }
 
-        public Image i_con;
-        public Image Icon
+        public ImageSource i_con;
+        public ImageSource Icon
         {
             get
             {
@@ -48,7 +39,7 @@ namespace SCAF.ViewModels
         {
             Username = Settings.Username;
             Password = Settings.Password;
-            
+            Icon = ImageSource.FromResource("SCAF.Resource.SCAF_logo.jpg");
         }
     }
 }

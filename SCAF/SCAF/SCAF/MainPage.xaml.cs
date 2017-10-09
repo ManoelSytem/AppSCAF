@@ -14,6 +14,7 @@ namespace SCAF
         public MainPage()
         {
             InitializeComponent();
+            ImgbackMenu.Source  = ImageSource.FromResource("SCAF.Resource.backMenu.jpg");
             _menuLista = ItemService.GetMenuItens();
             navigationDrawerList.ItemsSource = _menuLista;
             Detail = new NavigationPage((Page)Activator.CreateInstance(typeof(HomePage)));
