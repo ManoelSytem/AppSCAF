@@ -21,7 +21,7 @@ namespace SCAF.Model
             // Definimos o titulo para o item
             // o icone do lado esquerdo e a pagina que vamos abrir
             var HomeView = new MasterPageItem() { Title = "Inicio", Icon= ImageSource.FromResource("SCAF.Resource.home_icon.png"), TargetType = typeof(HomePage) };
-            var SolicitacaoCompraView = new MasterPageItem() { Title = "Solicitação de Compra", Icon = ImageSource.FromResource("SCAF.Resource.sc_icon.png"), TargetType = typeof(SolicitacaoCompraPage) };
+            var SolicitacaoCompraView = new MasterPageItem() { Title = "Solicitação de Compra", Icon = ImageSource.FromResource("SCAF.Resource.sc_icon.png"), TargetType = typeof(TabbedPageSc) };
             // Adicionando items no menuLista
             menuLista.Add(HomeView);
             menuLista.Add(SolicitacaoCompraView);

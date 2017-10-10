@@ -65,6 +65,9 @@
     <Compile Include="Views\SolicitacaoCompraPage.xaml.cs">
       <DependentUpon>SolicitacaoCompraPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\TabbedPageSc.xaml.cs">
+      <DependentUpon>TabbedPageSc.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MainPage.xaml">
@@ -160,6 +163,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\LoginPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\TabbedPageSc.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
