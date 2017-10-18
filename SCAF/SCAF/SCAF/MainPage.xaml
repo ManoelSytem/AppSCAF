@@ -8,9 +8,9 @@
 
     <MasterDetailPage.Master>
         <ContentPage  Title="Menu" BackgroundColor="#e8e8e8">
-            <Grid BackgroundColor="Transparent">
+            <Grid BackgroundColor="#efc428">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="400" />
+                    <RowDefinition Height="800" />
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
                 <StackLayout Orientation="Vertical" >

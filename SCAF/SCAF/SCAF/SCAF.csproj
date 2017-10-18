@@ -56,6 +56,9 @@
     <Compile Include="Services\SolicitacaoCompraService.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
     <Compile Include="ViewModels\LoginViewModel.cs" />
+    <Compile Include="Views\AutorizacaoFornecimentoPage.xaml.cs">
+      <DependentUpon>AutorizacaoFornecimentoPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\HomePage.xaml.cs">
       <DependentUpon>HomePage.xaml</DependentUpon>
     </Compile>
@@ -65,8 +68,11 @@
     <Compile Include="Views\SolicitacaoCompraPage.xaml.cs">
       <DependentUpon>SolicitacaoCompraPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\TabbedPageSc.xaml.cs">
-      <DependentUpon>TabbedPageSc.xaml</DependentUpon>
+    <Compile Include="Views\TabbedPageCotacao.xaml.cs">
+      <DependentUpon>TabbedPageCotacao.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TabbedPageForn.xaml.cs">
+      <DependentUpon>TabbedPageForn.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -168,10 +174,31 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\TabbedPageSc.xaml">
+    <EmbeddedResource Include="Views\TabbedPageForn.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\TabbedPageCotacao.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\AutorizacaoFornecimentoPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource\icone_forne.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource\Icone_dolar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource\b2b.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />
