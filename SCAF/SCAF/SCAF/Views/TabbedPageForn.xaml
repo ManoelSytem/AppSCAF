@@ -1,9 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:SCAF.ViewModels;assembly=SCAF"
              x:Class="SCAF.Views.TabbedPageForn"
+             xmlns:local="clr-namespace:SCAF.Behaviors"
              Title="Fornecedores">
-  <!--Pages can be added as references or inline-->
-  <ContentPage Title="Fornecedores" />
-  <ContentPage Title="Cadastrar" />
+    
+    <!--Pages can be added as references or inline-->
+    <ContentPage Title="Fornecedores" />
+
+    <ContentPage Title="Cadastrar" >
+        <ContentPage.BindingContext>
+            <viewModels:FornecedorViewModel/>
+        </ContentPage.BindingContext>
+        <StackLayout>
+            <Entry Placeholder="Razao Social" x:Name="txtRazaoSocial" Text="{Binding RazaoSocial}"/>
+            <Entry Placeholder="Nome Fantasia" x:Name="txtNomeFantasia" Text="{Binding NomeFantasia}" />
+            <Entry Placeholder="Cnpj" x:Name="txtCnpj" Text="{Binding Cpnj}"/>
+            <Entry Placeholder="Inscrição Estadual" x:Name="txtIncEstadual" Text="{Binding InscricaoEstadual}"/>
+            <Entry Placeholder="Endereço" x:Name="txtEndereco" Text="{Binding Endereco}"/>
+            <Entry Placeholder="Email@.com" x:Name="txtEmail" Text="{Binding Email}">
+                <Entry.Behaviors>
+                    <local:EmailValidatorBehavior/>
+                </Entry.Behaviors>
+            </Entry>
+            <Entry Placeholder="Telefone" x:Name="txtTelefone" Text="{Binding Telefone}" >
+                <Entry.Behaviors>
+                    <local:MaxLengthValidatorBehavior  MaxLength="10"/>
+                    <local:NumeroValidatorBehavior/>
+                </Entry.Behaviors>
+            </Entry>
+        </StackLayout>
+    </ContentPage>
 </TabbedPage>
