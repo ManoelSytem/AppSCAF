@@ -5,12 +5,12 @@
              x:Class="SCAF.Views.TabbedPageForn"
              xmlns:local="clr-namespace:SCAF.Behaviors"
              Title="Fornecedores">
-    
+    <ContentPage.BindingContext>
+        <viewModels:FornecedorViewModel/>
+    </ContentPage.BindingContext>
     <!--Pages Fornecedores-->
     <ContentPage Title="Fornecedores">
-        <ContentPage.BindingContext>
-            <viewModels:FornecedorViewModel/>
-        </ContentPage.BindingContext>
+     
         <ListView ItemsSource="{Binding Fornecedor}"
            HasUnevenRows="True"
            BackgroundColor="#ecf0f1"

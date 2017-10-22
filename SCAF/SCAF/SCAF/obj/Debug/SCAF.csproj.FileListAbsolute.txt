@@ -75,4 +75,3 @@ C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF\bin\Debug\SCAF.dll.
 C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF\obj\Debug\SCAF.Views.TabbedPageForn.xaml.g.cs
 C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF\obj\Debug\SCAF.Views.TabbedPageCotacao.xaml.g.cs
 C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF\obj\Debug\SCAF.Views.AutorizacaoFornecimentoPage.xaml.g.cs
-C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF\obj\Debug\SCAF.csprojResolveAssemblyReference.cache

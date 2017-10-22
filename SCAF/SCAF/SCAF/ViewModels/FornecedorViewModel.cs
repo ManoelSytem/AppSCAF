@@ -33,7 +33,7 @@ namespace SCAF.ViewModels
                     _oldFornecedor.IsVisible = false;
                     UpdateFornecedor(fornecedor);
                 }
-                _oldFornecedor.IsVisible = true;
+                fornecedor.IsVisible = true;
                 UpdateFornecedor(fornecedor);
             }
 
