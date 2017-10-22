@@ -52,6 +52,8 @@
     <Compile Include="Model\Fornecedor.cs" />
     <Compile Include="Model\Token.cs" />
     <Compile Include="Model\User.cs" />
+    <Compile Include="Repositorio\FornecedorRepositorio.cs" />
+    <Compile Include="Services\ApiServiceFornecedor.cs" />
     <Compile Include="Services\ApiServices.cs" />
     <Compile Include="Services\ItemService.cs" />
     <Compile Include="Model\MasterPageItem.cs" />

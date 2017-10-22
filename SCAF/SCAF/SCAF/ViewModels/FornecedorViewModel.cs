@@ -1,4 +1,6 @@
 ﻿using SCAF.Model;
+using SCAF.Services;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using Xamarin.Forms.Xaml;
 
@@ -8,15 +10,13 @@ namespace SCAF.ViewModels
     public class FornecedorViewModel 
     {
         private Fornecedor _oldFornecedor;
-
+        public List<Fornecedor> lisfornecedor;
         public ObservableCollection<Fornecedor> Fornecedor { get; set; }
 
+        public ApiServiceFornecedor servicoFonecedor;
         public FornecedorViewModel()
         {
-            Fornecedor = new ObservableCollection<Fornecedor>
-            {
-                new Fornecedor{ NomeFantasia = "Coelba NeoEnergia", Cnpj= "073578787854", IsVisible = false}
-            };
+            ObterListaFornecedores();
         }
 
         public void HideOrShowFornecedor(Fornecedor fornecedor)
@@ -45,6 +45,17 @@ namespace SCAF.ViewModels
             var Index = Fornecedor.IndexOf(fornecedor);
             Fornecedor.Remove(fornecedor);
             Fornecedor.Insert(Index, fornecedor);
+        }
+
+        private async void ObterListaFornecedores()
+        {   servicoFonecedor = new ApiServiceFornecedor();
+            Fornecedor = new ObservableCollection<Fornecedor>();
+            lisfornecedor = await servicoFonecedor.GetFornecedorsAsync();
+
+            foreach (var fornecedor in lisfornecedor)
+            {
+                Fornecedor.Add(fornecedor);
+            }
         }
     }
 }
