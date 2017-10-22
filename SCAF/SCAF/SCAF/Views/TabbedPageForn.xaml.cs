@@ -1,4 +1,6 @@
-﻿using System;
+﻿using SCAF.Model;
+using SCAF.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +17,13 @@ namespace SCAF.Views
         public TabbedPageForn ()
         {
             InitializeComponent();
+        }
+
+        private void ListView_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            var vm = BindingContext as FornecedorViewModel;
+            var fornecedor = e.Item as Fornecedor;
+            vm.HideOrShowFornecedor(fornecedor);
         }
     }
 }

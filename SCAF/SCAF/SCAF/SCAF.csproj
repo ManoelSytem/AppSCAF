@@ -49,6 +49,7 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Model\Constats.cs" />
+    <Compile Include="Model\Fornecedor.cs" />
     <Compile Include="Model\Token.cs" />
     <Compile Include="Model\User.cs" />
     <Compile Include="Services\ApiServices.cs" />

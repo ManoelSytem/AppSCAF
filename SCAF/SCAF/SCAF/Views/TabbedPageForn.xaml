@@ -1,14 +1,45 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+<TabbedPage  xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewModels="clr-namespace:SCAF.ViewModels;assembly=SCAF"
              x:Class="SCAF.Views.TabbedPageForn"
              xmlns:local="clr-namespace:SCAF.Behaviors"
              Title="Fornecedores">
     
-    <!--Pages can be added as references or inline-->
-    <ContentPage Title="Fornecedores" />
-
+    <!--Pages Fornecedores-->
+    <ContentPage Title="Fornecedores">
+        <ContentPage.BindingContext>
+            <viewModels:FornecedorViewModel/>
+        </ContentPage.BindingContext>
+        <ListView ItemsSource="{Binding Fornecedor}"
+           HasUnevenRows="True"
+           BackgroundColor="#ecf0f1"
+           SeparatorVisibility="None"
+           HorizontalOptions="FillAndExpand"
+           VerticalOptions="FillAndExpand"
+           ItemTapped="ListView_ItemTapped">
+         <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout
+                                 BackgroundColor="White">
+                        <Label Text="{Binding NomeFantasia}"
+                               Margin="8"
+                               FontAttributes="Bold"
+                               FontSize="Medium" />
+                        <Label Text="{Binding Cnpj}"
+                               Margin="8,2,8,4"
+                               FontSize="Small" />
+                        <Button Text="Detalhe"
+                          IsVisible="{Binding IsVisible}"/>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+         </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage>
+    
+    <!--Pages two Fornecedores Cadastrar -->
     <ContentPage Title="Cadastrar" >
         <ContentPage.BindingContext>
             <viewModels:FornecedorViewModel/>
