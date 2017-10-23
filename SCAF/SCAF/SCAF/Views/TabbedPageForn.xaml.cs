@@ -14,6 +14,8 @@ namespace SCAF.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class TabbedPageForn : TabbedPage
     {
+        private List<Fornecedor> fornecedor;
+        private Fornecedor novoForn;
         public TabbedPageForn ()
         {
             InitializeComponent();
@@ -24,6 +26,24 @@ namespace SCAF.Views
             var vm = BindingContext as FornecedorViewModel;
             var fornecedor = e.Item as Fornecedor;
             vm.HideOrShowFornecedor(fornecedor);
+
+        }
+
+        private void CadastrarFornecedor(object sender, EventArgs e)
+        {
+            novoForn = new Fornecedor();
+            novoForn.RazaoSocial = txtRazaoSocial.Text;
+            novoForn.NomeFantasia = txtNomeFantasia.Text;
+            novoForn.Cnpj = txtCnpj.Text;
+            novoForn.Categoria = txtCategoria.Text;
+            novoForn.Email = txtEmail.Text;
+            novoForn.InscricaoEstadual = txtIncEstadual.Text;
+            novoForn.Endereco = txtEndereco.Text;
+            novoForn.Telefone = txtTelefone.Text;
+
+            fornecedor = new List<Fornecedor>();
+            fornecedor.Add(novoForn);
+            FornecedorListView.ItemsSource = fornecedor.ToList();
         }
     }
 }

@@ -8,10 +8,6 @@ namespace SCAF.Repositorio
 {
     public class FornecedorRepositorio
     {
-        public async void ObterListFornecedor()
-        {
-
-
-        }
+       
     }
 }
