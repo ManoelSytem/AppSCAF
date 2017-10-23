@@ -29,41 +29,20 @@ namespace SCAF.ViewModels
             get { return fornecedor; }
             set
             {
-                if (fornecedor != value)
-                {
+               
                     fornecedor = value;
-                    RaisePropertyChanged("fornecedor");
-                }
+                     OnPropertyChanged("Fornecedor");
             }
         }
         public ApiServiceFornecedor servicoFonecedor;
 
         public event PropertyChangedEventHandler PropertyChanged;
-        private void RaisePropertyChanged(string prop)
+        private void OnPropertyChanged(string name)
         {
-            if (PropertyChanged != null)
-
-                PropertyChanged(this, new PropertyChangedEventArgs(prop));        
-        }
-
-        public Command CreateCommand // for ADD
-        {
-            get
+            PropertyChangedEventHandler handler = PropertyChanged;
+            if (handler != null)
             {
-                return new Command(() =>
-                {
-                    fornecedor = new ObservableCollection<Fornecedor> 
-                    { new Fornecedor{
-                        RazaoSocial = RazaoSocial,
-                        NomeFantasia = NomeFantasia,
-                        InscricaoEstadual = InscricaoEstadual,
-                        Cnpj = Cnpj,
-                        Endereco = Endereco,
-                        Categoria = Categoria,
-                        Email = Email
-                        }
-                    };
-                });
+                handler(this, new PropertyChangedEventArgs(name));
             }
         }
 
@@ -117,8 +96,8 @@ namespace SCAF.ViewModels
             }else
             {
                 var caunt = Fornecedor.Count;
+                fornecedor.IsVisible = false;
                 Fornecedor.Insert(caunt, fornecedor);
-                Fornecedor.Add(fornecedor);
             }
         }
 

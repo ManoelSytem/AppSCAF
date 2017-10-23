@@ -41,9 +41,9 @@ namespace SCAF.Views
             novoForn.Endereco = txtEndereco.Text;
             novoForn.Telefone = txtTelefone.Text;
 
-            fornecedor = new List<Fornecedor>();
-            fornecedor.Add(novoForn);
-            FornecedorListView.ItemsSource = fornecedor.ToList();
+            var vm = BindingContext as FornecedorViewModel;
+            vm.HideOrShowFornecedor(novoForn);
+
         }
     }
 }

@@ -14,9 +14,6 @@
         <ListView  x:Name="FornecedorListView" ItemsSource="{Binding Fornecedor}"
            HasUnevenRows="True"
            BackgroundColor="#ecf0f1"
-           SeparatorVisibility="None"
-           HorizontalOptions="FillAndExpand"
-           VerticalOptions="FillAndExpand"
            ItemTapped="ListView_ItemTapped"
            >
          <ListView.ItemTemplate>
@@ -66,8 +63,9 @@
                     <local:NumeroValidatorBehavior/>
                 </Entry.Behaviors>
             </Entry>
+            <!--Command="{Binding CreateCommand}-->
             <Button Text="Cadastrar"
-                Command="{Binding CreateCommand}"/>
+                Clicked="CadastrarFornecedor" />
         </StackLayout>
     </ContentPage>
 </TabbedPage>

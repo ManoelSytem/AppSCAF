@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-10-23T01:42:14.225</Modified>
+      <Modified>2017-10-23T15:17:13.258</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\bin\x86\Debug\SCAF.UWP.exe">
       <PackagePath>entrypoint\SCAF.UWP.exe</PackagePath>
-      <Modified>2017-10-23T01:42:11.436</Modified>
+      <Modified>2017-10-23T15:17:09.817</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\netob\.nuget\packages\Microsoft.CSharp\4.3.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -605,7 +605,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF\bin\Debug\SCAF.dll">
       <PackagePath>SCAF.dll</PackagePath>
-      <Modified>2017-10-23T01:42:01.078</Modified>
+      <Modified>2017-10-23T15:16:56.655</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF\bin\Debug\SCAF.dll.config">
       <PackagePath>SCAF.dll.config</PackagePath>
@@ -871,7 +871,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\bin\x86\Debug\Core\SCAF.UWP.exe">
       <PackagePath>SCAF.UWP.exe</PackagePath>
-      <Modified>2017-10-23T01:42:14.215</Modified>
+      <Modified>2017-10-23T15:17:13.249</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
