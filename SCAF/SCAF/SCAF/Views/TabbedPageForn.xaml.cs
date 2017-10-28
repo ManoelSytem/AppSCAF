@@ -46,5 +46,13 @@ namespace SCAF.Views
         {
             await Navigation.PushAsync(new FornecedorDetalhePage(fornecedor));
         }
+
+        private void EditarFornecedor(object sender, EventArgs e)
+        {
+            var pages = Children.GetEnumerator();
+            pages.MoveNext(); // First page
+            pages.MoveNext(); // Second page
+            CurrentPage = pages.Current;
+        }
     }
 }

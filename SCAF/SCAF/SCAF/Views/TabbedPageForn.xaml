@@ -31,9 +31,19 @@
                             <Label Text="{Binding Categoria}"
                                Margin="8,2,8,4"
                                FontSize="Small" />
-                            <Button Text="Detalhe"
+                           
+                         <StackLayout
+                             VerticalOptions="CenterAndExpand"
+                             HorizontalOptions="CenterAndExpand"
+                             Orientation="Horizontal">
+                                <Button Text="Detalhe"  IsVisible="{Binding IsVisible}" Clicked="EditarFornecedor"/>
+                                <Button BackgroundColor="#0099ff" Text="Editar"
                           IsVisible="{Binding IsVisible}" Clicked="DetalheFornecedor"/>
-                    </StackLayout>
+                                <Button BackgroundColor="#ff8c1a" Text="Remover"
+                          IsVisible="{Binding IsVisible}" Clicked="DetalheFornecedor"/>
+                        </StackLayout>
+                          
+                        </StackLayout>
                 </ViewCell>
             </DataTemplate>
          </ListView.ItemTemplate>
