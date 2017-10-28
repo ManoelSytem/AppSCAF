@@ -9,7 +9,7 @@
         <viewModels:FornecedorViewModel/>
     </ContentPage.BindingContext>
     <!--Pages Fornecedores-->
-    <ContentPage Title="Fornecedores">
+    <ContentPage x:Name="TabFornecedores" Title="Fornecedores">
 
         <ListView  x:Name="FornecedorListView" ItemsSource="{Binding Fornecedor}"
            HasUnevenRows="True"
@@ -36,11 +36,11 @@
                              VerticalOptions="CenterAndExpand"
                              HorizontalOptions="CenterAndExpand"
                              Orientation="Horizontal">
-                                <Button Text="Detalhe"  IsVisible="{Binding IsVisible}" Clicked="EditarFornecedor"/>
+                                <Button Text="Detalhe"  IsVisible="{Binding IsVisible}" Clicked="DetalheFornecedor"/>
                                 <Button BackgroundColor="#0099ff" Text="Editar"
-                          IsVisible="{Binding IsVisible}" Clicked="DetalheFornecedor"/>
-                                <Button BackgroundColor="#ff8c1a" Text="Remover"
-                          IsVisible="{Binding IsVisible}" Clicked="DetalheFornecedor"/>
+                          IsVisible="{Binding IsVisible}" Clicked="EditarFornecedor"/>
+                                <Button BackgroundColor="#ff8c1a" Text="Delete"
+                          IsVisible="{Binding IsVisible}" Clicked="DeletaFornecedor"/>
                         </StackLayout>
                           
                         </StackLayout>
@@ -51,7 +51,7 @@
     </ContentPage>
     
     <!--Pages two Fornecedores Cadastrar -->
-    <ContentPage Title="Cadastrar" >
+    <ContentPage x:Name="Cadastrar" Title="Cadastrar" >
         <ContentPage.BindingContext>
             <viewModels:FornecedorViewModel/>
         </ContentPage.BindingContext>
@@ -77,4 +77,35 @@
                 Clicked="CadastrarFornecedor" />
         </StackLayout>
     </ContentPage>
+
+    <!--Pages tree Fornecedores Atualizar -->
+    <ContentPage IsVisible="False"  x:Name="TabtreeContentAtualizar" >
+        <ContentPage.BindingContext>
+            <viewModels:FornecedorViewModel/>
+        </ContentPage.BindingContext>
+        <StackLayout>
+            <Entry Placeholder="Razao Social" x:Name="txt2RazaoSocial" Text="{Binding RazaoSocial, Mode=TwoWay}"/>
+            <Entry Placeholder="Nome Fantasia" x:Name="txt2NomeFantasia" Text="{Binding NomeFantasia, Mode=TwoWay}" />
+            <Entry Keyboard="Numeric" Placeholder="Cnpj" x:Name="txt2Cnpj" Text="{Binding Cpnj,Mode=TwoWay}"/>
+            <Entry Placeholder="Inscrição Estadual" x:Name="txt2IncEstadual" Text="{Binding InscricaoEstadual,Mode=TwoWay}"/>
+            <Entry Placeholder="Endereço" x:Name="txt2Endereco" Text="{Binding Endereco, Mode=TwoWay}"/>
+            <Entry Placeholder="Cetegoria" x:Name="txt2Categoria" Text="{Binding Categoria, Mode=TwoWay}"/>
+            <Entry Placeholder="Email@.com" x:Name="txt2Email" Text="{Binding Email, Mode=TwoWay}">
+                <Entry.Behaviors>
+                    <local:EmailValidatorBehavior/>
+                </Entry.Behaviors>
+            </Entry>
+            <Entry Keyboard="Telephone" Placeholder="71 9 8888 8888" x:Name="txt2Telefone" Text="{Binding Telefone,Mode=TwoWay}" >
+                <Entry.Behaviors>
+                    <local:EntryLengthValidatorBehavior MaxLength="14"/>
+                </Entry.Behaviors>
+            </Entry>
+            <!--Command="{Binding CreateCommand}-->
+            <Button Text="Atualizar"
+                Clicked="AtualizarFornecedor" />
+            <Button Text="Cancelar"
+                Clicked="CancelarAutalização" />
+        </StackLayout>
+    </ContentPage>
+
 </TabbedPage>
