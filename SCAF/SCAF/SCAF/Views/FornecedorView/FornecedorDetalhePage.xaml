@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SCAF.Views.FornecedorView.FornecedorDetalhePage" Title="Detalhe Fornecedor">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Nome Fantasia"
+                               Margin="3"
+                               FontAttributes="Bold"
+                               FontSize="Medium" />
+            <Label  x:Name="lblNomeFantasia"
+                               Margin="3"
+                               FontSize="Micro" />
+            <Label Text="Razao Social"
+                               Margin="3"
+                               FontAttributes="Bold"
+                               FontSize="Medium" />
+            <Label  x:Name="lblRazaoSocial"
+                               Margin="3"
+                               FontSize="Medium" />
+            <Label Text="Cnpj"
+                               Margin="3"
+                               FontAttributes="Bold"
+                               FontSize="Medium" />
+            <Label  x:Name="lblCnpj"
+                               Margin="3"
+                               FontSize="Medium" />
+            <Label Text="Inscrição Estadual"
+                               Margin="3"
+                               FontAttributes="Bold"
+                               FontSize="Medium" />
+            <Label  x:Name="lblIncEstadual"
+                               Margin="3"
+                               FontSize="Medium" />
+
+            <Label Text="Endereço"
+                               Margin="3"
+                               FontAttributes="Bold"
+                               FontSize="Medium" />
+            <Label  x:Name="lblEndereco"
+                               Margin="3"
+                               FontSize="Medium" />
+            <Label Text="Categoria"
+                               Margin="3"
+                               FontAttributes="Bold"
+                               FontSize="Medium" />
+            <Label  x:Name="lblCategoria"
+                               Margin="3"
+                               FontSize="Medium" />
+            <Label Text="Email"
+                               Margin="3"
+                               FontAttributes="Bold"
+                               FontSize="Medium" />
+            <Label  x:Name="lblEmail"
+                               Margin="3"
+                               FontSize="Medium" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

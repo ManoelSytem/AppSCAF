@@ -39,8 +39,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Behaviors\EmailValidatorBehavior.cs" />
-    <Compile Include="Behaviors\MaxLengthValidatorBehavior.cs" />
-    <Compile Include="Behaviors\NumeroValidatorBehavior.cs" />
+    <Compile Include="Behaviors\EntryLengthValidatorBehavior.cs" />
     <Compile Include="Data\ISQlite.cs" />
     <Compile Include="Data\TokenDataBaseControl.cs" />
     <Compile Include="Data\UserDatabaseController.cs" />
@@ -63,8 +62,12 @@
     <Compile Include="ViewModels\BaseViewModel.cs" />
     <Compile Include="ViewModels\FornecedorViewModel.cs" />
     <Compile Include="ViewModels\LoginViewModel.cs" />
+    <Compile Include="ViewModels\NotificarBase.cs" />
     <Compile Include="Views\AutorizacaoFornecimentoPage.xaml.cs">
       <DependentUpon>AutorizacaoFornecimentoPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FornecedorView\FornecedorDetalhePage.xaml.cs">
+      <DependentUpon>FornecedorDetalhePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\HomePage.xaml.cs">
       <DependentUpon>HomePage.xaml</DependentUpon>
@@ -206,6 +209,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resource\b2b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\FornecedorView\FornecedorDetalhePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />

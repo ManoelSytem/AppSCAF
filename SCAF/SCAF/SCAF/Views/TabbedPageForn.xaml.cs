@@ -1,21 +1,17 @@
 ﻿using SCAF.Model;
 using SCAF.ViewModels;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using SCAF.Views.FornecedorView;
 
 namespace SCAF.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class TabbedPageForn : TabbedPage
     {
-        private List<Fornecedor> fornecedor;
         private Fornecedor novoForn;
+        private Fornecedor fornecedor;
         public TabbedPageForn ()
         {
             InitializeComponent();
@@ -24,7 +20,7 @@ namespace SCAF.Views
         private void ListView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             var vm = BindingContext as FornecedorViewModel;
-            var fornecedor = e.Item as Fornecedor;
+            fornecedor = e.Item as Fornecedor;
             vm.HideOrShowFornecedor(fornecedor);
 
         }
@@ -44,6 +40,11 @@ namespace SCAF.Views
             var vm = BindingContext as FornecedorViewModel;
             vm.HideOrShowFornecedor(novoForn);
 
+        }
+
+        private async void DetalheFornecedor(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new FornecedorDetalhePage(fornecedor));
         }
     }
 }

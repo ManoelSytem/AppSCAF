@@ -3,23 +3,31 @@ using SCAF.Services;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.Windows.Input;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
+using System.Runtime.CompilerServices;
 
 namespace SCAF.ViewModels
 {
        
-    public class FornecedorViewModel : INotifyPropertyChanged
+    public class FornecedorViewModel : NotificarBase
     {
-        public string NomeFantasia { get; set; }
-        public string InscricaoEstadual { get; set; }
-        public string Cnpj { get; set; }
-        public string Endereco { get; set; }
-        public string Email { get; set; }
-        public string Telefone { get; set; }
-        public string RazaoSocial { get; set; }
-        public string Categoria { get; set; }
+
+        public string nomeFantasia;
+        public string NomeFantasia { get { return nomeFantasia; } set { nomeFantasia = value; Notificar(); } }
+        public string inscricaoEstadual;
+        public string InscricaoEstadual { get { return inscricaoEstadual; } set { inscricaoEstadual = value; Notificar(); } }
+        public string cnpj;
+        public string Cnpj { get { return cnpj; } set { cnpj = value; Notificar(); } }
+        public string endereco;
+        public string Endereco { get { return endereco; } set { endereco = value; Notificar(); } }
+        public string email;
+        public string Email { get { return email; } set { email = value; Notificar(); } }
+        public string telefone;
+        public string Telefone { get { return telefone; } set { telefone = value; Notificar(); } }
+        public string razaoSocial;
+        public string RazaoSocial { get { return razaoSocial; } set { razaoSocial = value; Notificar(); } }
+        public string categoria;
+        public string Categoria { get { return categoria; } set { categoria = value; Notificar(); } }
+
 
         private Fornecedor _oldFornecedor;
         public List<Fornecedor> lisfornecedor;
@@ -31,20 +39,10 @@ namespace SCAF.ViewModels
             {
                
                     fornecedor = value;
-                     OnPropertyChanged("Fornecedor");
+                    Notificar();
             }
         }
         public ApiServiceFornecedor servicoFonecedor;
-
-        public event PropertyChangedEventHandler PropertyChanged;
-        private void OnPropertyChanged(string name)
-        {
-            PropertyChangedEventHandler handler = PropertyChanged;
-            if (handler != null)
-            {
-                handler(this, new PropertyChangedEventArgs(name));
-            }
-        }
 
         public FornecedorViewModel()
         {
@@ -112,5 +110,11 @@ namespace SCAF.ViewModels
                 Fornecedor.Add(fornecedor);
             }
         }
+
+        public void DetalhaFornecedor(Fornecedor forn)
+        {
+            NomeFantasia = forn.NomeFantasia;
+        }
+
     }
 }

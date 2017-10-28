@@ -32,7 +32,7 @@
                                Margin="8,2,8,4"
                                FontSize="Small" />
                             <Button Text="Detalhe"
-                          IsVisible="{Binding IsVisible}"/>
+                          IsVisible="{Binding IsVisible}" Clicked="DetalheFornecedor"/>
                     </StackLayout>
                 </ViewCell>
             </DataTemplate>
@@ -48,7 +48,7 @@
         <StackLayout>
             <Entry Placeholder="Razao Social" x:Name="txtRazaoSocial" Text="{Binding RazaoSocial, Mode=TwoWay}"/>
             <Entry Placeholder="Nome Fantasia" x:Name="txtNomeFantasia" Text="{Binding NomeFantasia, Mode=TwoWay}" />
-            <Entry Placeholder="Cnpj" x:Name="txtCnpj" Text="{Binding Cpnj,Mode=TwoWay}"/>
+            <Entry Keyboard="Numeric" Placeholder="Cnpj" x:Name="txtCnpj" Text="{Binding Cpnj,Mode=TwoWay}"/>
             <Entry Placeholder="Inscrição Estadual" x:Name="txtIncEstadual" Text="{Binding InscricaoEstadual,Mode=TwoWay}"/>
             <Entry Placeholder="Endereço" x:Name="txtEndereco" Text="{Binding Endereco, Mode=TwoWay}"/>
             <Entry Placeholder="Cetegoria" x:Name="txtCategoria" Text="{Binding Categoria, Mode=TwoWay}"/>
@@ -57,10 +57,9 @@
                     <local:EmailValidatorBehavior/>
                 </Entry.Behaviors>
             </Entry>
-            <Entry Placeholder="Telefone" x:Name="txtTelefone" Text="{Binding Telefone,Mode=TwoWay}" >
+            <Entry Keyboard="Telephone" Placeholder="71 9 8888 8888" x:Name="txtTelefone" Text="{Binding Telefone,Mode=TwoWay}" >
                 <Entry.Behaviors>
-                    <local:MaxLengthValidatorBehavior  MaxLength="10"/>
-                    <local:NumeroValidatorBehavior/>
+                    <local:EntryLengthValidatorBehavior MaxLength="14"/>
                 </Entry.Behaviors>
             </Entry>
             <!--Command="{Binding CreateCommand}-->
