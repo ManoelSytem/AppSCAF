@@ -63,7 +63,8 @@
     <Compile Include="ViewModels\FornecedorViewModel.cs" />
     <Compile Include="ViewModels\LoginViewModel.cs" />
     <Compile Include="ViewModels\NotificarBase.cs" />
-    <Compile Include="Views\AutorizacaoFornecimentoPage.xaml.cs">
+    <Compile Include="ViewModels\SolicitacaoCompraViewModel.cs" />
+    <Compile Include="Views\AutorizacaoFornView\AutorizacaoFornecimentoPage.xaml.cs">
       <DependentUpon>AutorizacaoFornecimentoPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\FornecedorView\FornecedorDetalhePage.xaml.cs">
@@ -75,13 +76,13 @@
     <Compile Include="Views\LoginPage.xaml.cs">
       <DependentUpon>LoginPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\SolicitacaoCompraPage.xaml.cs">
+    <Compile Include="Views\SolicitacaoCompraView\SolicitacaoCompraPage.xaml.cs">
       <DependentUpon>SolicitacaoCompraPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\TabbedPageCotacao.xaml.cs">
+    <Compile Include="Views\CotacaoView\TabbedPageCotacao.xaml.cs">
       <DependentUpon>TabbedPageCotacao.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\TabbedPageForn.xaml.cs">
+    <Compile Include="Views\FornecedorView\TabbedPageForn.xaml.cs">
       <DependentUpon>TabbedPageForn.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -156,7 +157,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\SolicitacaoCompraPage.xaml">
+    <EmbeddedResource Include="Views\SolicitacaoCompraView\SolicitacaoCompraPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -184,19 +185,19 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\TabbedPageForn.xaml">
+    <EmbeddedResource Include="Views\FornecedorView\TabbedPageForn.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\TabbedPageCotacao.xaml">
+    <EmbeddedResource Include="Views\CotacaoView\TabbedPageCotacao.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\AutorizacaoFornecimentoPage.xaml">
+    <EmbeddedResource Include="Views\AutorizacaoFornView\AutorizacaoFornecimentoPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -216,6 +217,7 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -15,6 +15,15 @@ c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF\obj\Debug\SC
 c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF\obj\Debug\SCAF.Views.HomePage.xaml.g.cs
 c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF\obj\Debug\SCAF.Views.SolicitacaoCompraPage.xaml.g.cs
 c:\users\netob\documents\visual studio 2017\Projects\SCAF\SCAF\SCAF\obj\Debug\SCAF.csprojResolveAssemblyReference.cache
+C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF\obj\Debug\SCAF.MainPage.xaml.g.cs
+C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF\obj\Debug\SCAF.App.xaml.g.cs
+C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF\obj\Debug\SCAF.Views.HomePage.xaml.g.cs
+C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF\obj\Debug\SCAF.Views.SolicitacaoCompraView.SolicitacaoCompraPage.xaml.g.cs
+C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF\obj\Debug\SCAF.Views.LoginPage.xaml.g.cs
+C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF\obj\Debug\SCAF.Views.FornecedorView.TabbedPageForn.xaml.g.cs
+C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF\obj\Debug\SCAF.Views.CotacaoView.TabbedPageCotacao.xaml.g.cs
+C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF\obj\Debug\SCAF.Views.AutorizacaoFornView.AutorizacaoFornecimentoPage.xaml.g.cs
+C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF\obj\Debug\SCAF.Views.FornecedorView.FornecedorDetalhePage.xaml.g.cs
 C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF\bin\Debug\SCAF.dll.config
 C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF\bin\Debug\SCAF.dll
 C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF\bin\Debug\SCAF.pdb
@@ -65,14 +74,5 @@ C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF\bin\Debug\System.Xm
 C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF\bin\Debug\System.Xml.xml
 C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF\bin\Debug\Mono.Security.pdb
 C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF\bin\Debug\Mono.Security.xml
-C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF\obj\Debug\SCAF.MainPage.xaml.g.cs
-C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF\obj\Debug\SCAF.App.xaml.g.cs
-C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF\obj\Debug\SCAF.Views.HomePage.xaml.g.cs
-C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF\obj\Debug\SCAF.Views.SolicitacaoCompraPage.xaml.g.cs
-C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF\obj\Debug\SCAF.Views.LoginPage.xaml.g.cs
-C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF\obj\Debug\SCAF.Views.TabbedPageForn.xaml.g.cs
-C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF\obj\Debug\SCAF.Views.TabbedPageCotacao.xaml.g.cs
-C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF\obj\Debug\SCAF.Views.AutorizacaoFornecimentoPage.xaml.g.cs
 C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF\obj\Debug\SCAF.dll
 C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF\obj\Debug\SCAF.pdb
-C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF\obj\Debug\SCAF.Views.FornecedorView.FornecedorDetalhePage.xaml.g.cs

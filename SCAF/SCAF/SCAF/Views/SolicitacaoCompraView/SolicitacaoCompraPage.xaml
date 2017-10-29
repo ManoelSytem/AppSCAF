@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SCAF.Views.SolicitacaoCompraPage"
+             xmlns:viewModels="clr-namespace:SCAF.ViewModels;assembly=SCAF"
+             Title="Solicitações de Compras">
+
+    <ContentPage.BindingContext>
+        <viewModels:SolicitacaoCompraViewModel/>
+    </ContentPage.BindingContext>
+    <StackLayout VerticalOptions="Center">
+        <ListView  x:Name="SolicitacaoCompra" ItemsSource="{Binding SolicitacaoCompra}"
+           HasUnevenRows="True"
+           BackgroundColor="#ecf0f1"
+           ItemTapped="ListView_ItemTapped"
+           >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout
+                            BackgroundColor="White"  Margin="8">
+                            <Label Text="{Binding Solicitante}"
+                               Margin="8"
+                               FontAttributes="Bold"
+                               FontSize="Medium" />
+                            <Label Text="{Binding Cliente}"
+                               Margin="8,2,8,4"
+                               FontSize="Micro" />
+                            <Label Text="{Binding Status}"
+                               Margin="8,2,8,4"
+                               FontSize="Small" />
+
+                            <StackLayout
+                             VerticalOptions="CenterAndExpand"
+                             HorizontalOptions="CenterAndExpand"
+                             Orientation="Horizontal">
+                                <Button Text="Detalhe"  IsVisible="{Binding IsVisible}" />
+                            </StackLayout>
+
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

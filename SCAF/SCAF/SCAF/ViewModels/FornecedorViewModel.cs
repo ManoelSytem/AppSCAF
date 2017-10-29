@@ -60,6 +60,7 @@ namespace SCAF.ViewModels
                 Cnpj = "65.182.980/0001-36",
                 Categoria = "Tecnologia"
                }
+
             };
             // ObterListaFornecedores();
         }
