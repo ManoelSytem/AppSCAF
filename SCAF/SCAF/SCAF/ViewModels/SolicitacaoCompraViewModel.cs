@@ -1,4 +1,5 @@
 ﻿using SCAF.Model;
+using SCAF.Services;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -8,11 +9,15 @@ namespace SCAF.ViewModels
 {
     public class SolicitacaoCompraViewModel : NotificarBase
     {
+        public SolicitacaoCompraService ScServico;
         public string status;
         public string Status { get { return status; } set { status = value; Notificar(); } }
 
         public DateTime dataEmisao;
         public DateTime DataEmisao { get { return dataEmisao; } set { dataEmisao = value; Notificar(); } }
+
+        public string textColorStatus;
+        public string TextColorStatus { get { return textColorStatus; } set { textColorStatus = value; Notificar(); } }
 
         public string cliente;
         public string Cliente { get { return cliente; } set { cliente = value; Notificar(); } }
@@ -33,23 +38,49 @@ namespace SCAF.ViewModels
         public string Departamento { get { return departamento; } set { departamento = value; Notificar(); } }
 
         public List<string> formaPagamento;
+        private SolicitacaoCompra _oldFornecedor;
+
         public List<string> FormaPagamento { get { return formaPagamento; } set { formaPagamento = value; Notificar(); } }
 
         public ObservableCollection<SolicitacaoCompra> SolicitacaoCompra { get; set; }
 
         public SolicitacaoCompraViewModel()
         {
+            ScServico = new SolicitacaoCompraService();
             SolicitacaoCompra = new ObservableCollection<SolicitacaoCompra>
-           {
-               new SolicitacaoCompra()
-               {
+            {
+            };
+            SolicitacaoCompra = ScServico.GetSc();
 
-
-               }
-
-           };
         }
 
+        public void HideOrShowFornecedor(SolicitacaoCompra sc)
+        {
+            if (_oldFornecedor == sc)
+            {
+                sc.IsVisible = !sc.IsVisible;
+                UpdateFornecedor(sc);
+            }
+            else
+            {
+                if (_oldFornecedor != null)
+                {
+                    _oldFornecedor.IsVisible = false;
+                    UpdateFornecedor(sc);
+                }
+                sc.IsVisible = true;
+                UpdateFornecedor(sc);
+            }
+
+            _oldFornecedor = sc;
+        }
+
+        private void UpdateFornecedor(SolicitacaoCompra sc)
+        {
+            var Index = SolicitacaoCompra.IndexOf(sc);
+                SolicitacaoCompra.Remove(sc);
+                SolicitacaoCompra.Insert(Index, sc);
+        }
 
     }
 }

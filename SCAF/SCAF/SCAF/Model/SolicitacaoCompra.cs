@@ -8,6 +8,10 @@ namespace SCAF.Model
     {
         public string Status { get; set; }
 
+        public string TextColorStatus { get; set; }
+
+        public bool IsVisible { get; set; }
+
         public DateTime DataEmisao { get; set; }
 
         public string Cliente { get; set; }
@@ -16,6 +20,8 @@ namespace SCAF.Model
 
         public string Observacao { get; set; }
 
+        public string Solicitante { get; set; }
+      
         public string Comprador { get; set; }
 
         public string Departamento { get; set; }

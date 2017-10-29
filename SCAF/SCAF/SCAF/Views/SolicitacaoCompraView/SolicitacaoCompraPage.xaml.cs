@@ -1,4 +1,6 @@
-﻿using System;
+﻿using SCAF.Model;
+using SCAF.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +14,8 @@ namespace SCAF.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class SolicitacaoCompraPage : ContentPage
     {
+        private SolicitacaoCompra sc;
+
         public SolicitacaoCompraPage()
         {
             InitializeComponent();
@@ -19,7 +23,9 @@ namespace SCAF.Views
 
         private void ListView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
-
+            var vm = BindingContext as SolicitacaoCompraViewModel;
+            sc = e.Item as SolicitacaoCompra;
+            vm.HideOrShowFornecedor(sc);
         }
     }
 }

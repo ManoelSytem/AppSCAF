@@ -23,20 +23,23 @@
                                Margin="8"
                                FontAttributes="Bold"
                                FontSize="Medium" />
-                            <Label Text="{Binding Cliente}"
+                            <Label Text="{Binding Departamento}"
                                Margin="8,2,8,4"
                                FontSize="Micro" />
-                            <Label Text="{Binding Status}"
+                            <Label Text="{Binding Cliente}"
                                Margin="8,2,8,4"
                                FontSize="Small" />
-
+                            <Label VerticalOptions="StartAndExpand"
+                             HorizontalOptions="StartAndExpand"
+                             BackgroundColor="{Binding TextColorStatus}" Text="{Binding Status}"
+                               Margin="8,2,8,4"
+                               FontSize="Micro"/>
                             <StackLayout
                              VerticalOptions="CenterAndExpand"
                              HorizontalOptions="CenterAndExpand"
                              Orientation="Horizontal">
                                 <Button Text="Detalhe"  IsVisible="{Binding IsVisible}" />
                             </StackLayout>
-
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>
