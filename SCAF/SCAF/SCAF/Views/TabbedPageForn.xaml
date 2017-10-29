@@ -100,11 +100,13 @@
                     <local:EntryLengthValidatorBehavior MaxLength="14"/>
                 </Entry.Behaviors>
             </Entry>
+            <StackLayout>
             <!--Command="{Binding CreateCommand}-->
             <Button Text="Atualizar"
                 Clicked="AtualizarFornecedor" />
             <Button Text="Cancelar"
                 Clicked="CancelarAutalização" />
+            </StackLayout>
         </StackLayout>
     </ContentPage>
 

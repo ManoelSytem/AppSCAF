@@ -66,12 +66,21 @@ namespace SCAF.Views
             txt2Endereco.Text = fornecedor.InscricaoEstadual;
             txt2Telefone.Text = fornecedor.Telefone;
 
-
         }
 
         private void AtualizarFornecedor(object sender, EventArgs e)
         {
+            fornecedor.RazaoSocial = txt2RazaoSocial.Text;
+            fornecedor.NomeFantasia = txt2NomeFantasia.Text;
+            fornecedor.Cnpj = txt2Cnpj.Text;
+            fornecedor.Categoria = txt2Categoria.Text;
+            fornecedor.Email = txt2Email.Text;
+            fornecedor.InscricaoEstadual = txt2IncEstadual.Text;
+            fornecedor.Endereco = txt2Endereco.Text;
+            fornecedor.Telefone = txt2Telefone.Text;
 
+            var vm = BindingContext as FornecedorViewModel;
+            vm.HideOrShowFornecedor(fornecedor);
         }
 
         private async void DeletaFornecedor(object sender, EventArgs e)
@@ -79,7 +88,8 @@ namespace SCAF.Views
             var result = await DisplayAlert("Menssagem", "Deseja realmente deleta este fornecedor da sua lista ?", "OK", "Cancelar");
             if (result == true) // if it's equal to Ok
             {
-                return;
+                var vm = BindingContext as FornecedorViewModel;
+                vm.DeleteFornecedor(fornecedor);
             }
             else // if it's equal to Cancel
             {
@@ -95,11 +105,8 @@ namespace SCAF.Views
             txt2NomeFantasia.Text = null;
             txt2Cnpj.Text = null;
             txt2Categoria.Text = null;
-            txt2Email.Text = null;
             txt2IncEstadual.Text = null;
             txt2Endereco.Text = null;
-            txt2Telefone.Text = null;
-
         }
     }
    

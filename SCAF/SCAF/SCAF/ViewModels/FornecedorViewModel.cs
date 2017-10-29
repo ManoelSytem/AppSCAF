@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using System;
 
 namespace SCAF.ViewModels
 {
@@ -97,6 +98,11 @@ namespace SCAF.ViewModels
                 fornecedor.IsVisible = false;
                 Fornecedor.Insert(caunt, fornecedor);
             }
+        }
+
+        public void DeleteFornecedor(Fornecedor fornecedor)
+        {
+            Fornecedor.Remove(fornecedor);
         }
 
         private async void ObterListaFornecedores()
