@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SCAF.Views.SolicitacaoCompraView.SolicitacaoCompraDetalhe"
+             xmlns:viewModels="clr-namespace:SCAF.ViewModels;assembly=SCAF"
+             Title="Detalhe">
+   
+    <ContentPage.BindingContext>
+        <viewModels:SolicitacaoCompraViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+            <Label Text="Solicitante"
+                               Margin="3"
+                               FontAttributes="Bold"
+                               FontSize="Medium" />
+            <Label x:Name="lblSolicitante"
+                               Margin="3"
+                               FontSize="Medium" />
+            <Label Text="Cliente"
+                               Margin="3"
+                               FontAttributes="Bold"
+                               FontSize="Medium" />
+            <Label x:Name="lblCliente"
+                               Margin="3"
+                               FontSize="Medium" />
+            <Label Text="Data de Emisão"
+                               Margin="3"
+                               FontAttributes="Bold"
+                               FontSize="Medium" />
+            <Label  x:Name="lblDatEmisao"
+                               Margin="3"
+                               FontSize="Medium" />
+            <Label Text="Prazo"
+                               Margin="3"
+                               FontAttributes="Bold"
+                               FontSize="Medium" />
+            <Label x:Name="lblPrazo"
+                               Margin="3"
+                               FontSize="Medium" />
+
+            <Label Text="Status"
+                               Margin="3"
+                               FontAttributes="Bold"
+                               FontSize="Medium" />
+            <Label x:Name="lblStatus" 
+                               Margin="3"
+                               FontSize="Medium" />
+            <Label Text="Departamento"
+                               Margin="3"
+                               FontAttributes="Bold"
+                               FontSize="Medium" />
+            <Label x:Name="lblDepartamento" 
+                               Margin="3"
+                               FontSize="Medium" />
+            <Label Text="Forma de Pagamento"
+                               Margin="3"
+                               FontAttributes="Bold"
+                               FontSize="Medium" />
+            <Label x:Name="lblfrmPgto"
+                               Margin="3"
+                               FontSize="Medium" />
+            <Label Text="Tipo"
+                               Margin="3"
+                               FontAttributes="Bold"
+                               FontSize="Medium" />
+            <Label x:Name="lblTipo"
+                               Margin="3"
+                               FontSize="Medium" />
+            <Label Text="Descrição da Compra"
+                               Margin="3"
+                               FontAttributes="Bold"
+                               FontSize="Medium" />
+            <Label x:Name="lblObservacao"
+                               Margin="3"
+                               FontSize="Medium" />
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

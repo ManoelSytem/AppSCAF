@@ -8,7 +8,6 @@
     <ContentPage.BindingContext>
         <viewModels:SolicitacaoCompraViewModel/>
     </ContentPage.BindingContext>
-    <StackLayout VerticalOptions="Center">
         <ListView  x:Name="SolicitacaoCompra" ItemsSource="{Binding SolicitacaoCompra}"
            HasUnevenRows="True"
            BackgroundColor="#ecf0f1"
@@ -38,12 +37,11 @@
                              VerticalOptions="CenterAndExpand"
                              HorizontalOptions="CenterAndExpand"
                              Orientation="Horizontal">
-                                <Button Text="Detalhe"  IsVisible="{Binding IsVisible}" />
+                                <Button Text="Detalhe"  IsVisible="{Binding IsVisible}" Clicked="DetalheSc"/>
                             </StackLayout>
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-    </StackLayout>
 </ContentPage>

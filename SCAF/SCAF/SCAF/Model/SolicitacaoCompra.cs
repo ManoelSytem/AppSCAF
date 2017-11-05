@@ -28,6 +28,7 @@ namespace SCAF.Model
 
         public string FormaPagamento { get; set; }
 
+        public string Tipo { get; set; }
 
     }
 }

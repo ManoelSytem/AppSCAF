@@ -26,10 +26,12 @@ namespace SCAF.Services
                 TextColorStatus = "#ffd000",
                 Cliente = "Rede Bahia de Televisão",
                 Prazo = DateTime.Now.AddDays(10),
-                Observacao = "Esta solicitação deve ser atendida em emediato",
+                Observacao = "Solicito a cotação de Tubos VD 12 mm 9,5",
                 Comprador = "Manoel Neto",
-                Departamento = "Compra",
-                FormaPagamento = "A vista"
+                Departamento = "Telecomunicações",
+                FormaPagamento = "A vista",
+                Tipo = "Produto"
+               
             });
 
             ListSolicitacaoCompra.Add(new SolicitacaoCompra()
@@ -40,10 +42,26 @@ namespace SCAF.Services
                 Cliente = "Rede Bahia de Televisão",
                 TextColorStatus = "#ff7700",
                 Prazo = DateTime.Now.AddDays(10),
-                Observacao = "Esta solicitação deve ser atendida em emediato",
+                Observacao = "Café Pilão 500 Vacuo. Quantidade 150. Solicitação para reposição do estoque",
                 Comprador = "Manoel Neto",
                 Departamento = "Compra",
-                FormaPagamento = "A Prazo"
+                FormaPagamento = "A Prazo",
+                Tipo = "Produto"
+            });
+
+            ListSolicitacaoCompra.Add(new SolicitacaoCompra()
+            {
+                Status = "Em Andamento",
+                DataEmisao = DateTime.Now,
+                Solicitante = "Larrisa Silva",
+                Cliente = "Globo FM",
+                TextColorStatus = "#ffd000",
+                Prazo = DateTime.Now.AddDays(10),
+                Observacao = "Solicito realizar cotação de serviço de outdoor. publicidade de 10 dias, sem Design. Cotação até 3 fornecedores.",
+                Comprador = "Manoel Neto",
+                Departamento = "Publicidade",
+                FormaPagamento = "A Prazo",
+                Tipo = "Serviço"
             });
 
 

@@ -3,7 +3,7 @@ using SCAF.Services;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-
+using Xamarin.Forms;
 
 namespace SCAF.ViewModels
 {

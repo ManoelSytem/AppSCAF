@@ -1,5 +1,4 @@
 ﻿using SCAF.Model;
-using SCAF.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
