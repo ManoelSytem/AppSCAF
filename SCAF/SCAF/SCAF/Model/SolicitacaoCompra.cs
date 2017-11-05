@@ -6,6 +6,8 @@ namespace SCAF.Model
 {
     public class SolicitacaoCompra
     {
+        public string codigo { get; set; }
+
         public string Status { get; set; }
 
         public string TextColorStatus { get; set; }

@@ -20,6 +20,7 @@ namespace SCAF.Services
             ListSolicitacaoCompra = new ObservableCollection<SolicitacaoCompra>();
 
             ListSolicitacaoCompra.Add(new SolicitacaoCompra() {
+                codigo = "014524",
                 Status = "Em Andamento",
                 DataEmisao = DateTime.Now,
                 Solicitante = "Estevão Roma",
@@ -36,13 +37,14 @@ namespace SCAF.Services
 
             ListSolicitacaoCompra.Add(new SolicitacaoCompra()
             {
+                codigo = "027485",
                 Status = "Em Cotação",
                 DataEmisao = DateTime.Now,
                 Solicitante = "Davi Reis",
                 Cliente = "Rede Bahia de Televisão",
                 TextColorStatus = "#ff7700",
                 Prazo = DateTime.Now.AddDays(10),
-                Observacao = "Café Pilão 500 Vacuo. Quantidade 150. Solicitação para reposição do estoque",
+                Observacao = "Café Em Pó Tradicional A Vácuo C/250gr Pilao. Quantidade 150. Solicitação para reposição do estoque",
                 Comprador = "Manoel Neto",
                 Departamento = "Compra",
                 FormaPagamento = "A Prazo",
@@ -51,6 +53,7 @@ namespace SCAF.Services
 
             ListSolicitacaoCompra.Add(new SolicitacaoCompra()
             {
+                codigo = "054875",
                 Status = "Em Andamento",
                 DataEmisao = DateTime.Now,
                 Solicitante = "Larrisa Silva",

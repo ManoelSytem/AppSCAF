@@ -48,7 +48,12 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Model\Constats.cs" />
+    <Compile Include="Model\Cotacao.cs" />
+    <Compile Include="Model\CotacaoProduto.cs" />
+    <Compile Include="Model\CotacaoServico.cs" />
     <Compile Include="Model\Fornecedor.cs" />
+    <Compile Include="Model\Produto.cs" />
+    <Compile Include="Model\Servico.cs" />
     <Compile Include="Model\Token.cs" />
     <Compile Include="Model\User.cs" />
     <Compile Include="Repositorio\FornecedorRepositorio.cs" />
@@ -58,9 +63,12 @@
     <Compile Include="Model\MasterPageItem.cs" />
     <Compile Include="Model\SolicitacaoCompra.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\ProdutoServico.cs" />
+    <Compile Include="Services\RepositorioServico.cs" />
     <Compile Include="Services\SolicitacaoCompraService.cs" />
     <Compile Include="Services\StringToColorConverter.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
+    <Compile Include="ViewModels\CotacaoViewModel.cs" />
     <Compile Include="ViewModels\FornecedorViewModel.cs" />
     <Compile Include="ViewModels\LoginViewModel.cs" />
     <Compile Include="ViewModels\NotificarBase.cs" />
