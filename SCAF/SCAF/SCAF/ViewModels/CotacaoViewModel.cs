@@ -38,6 +38,21 @@ namespace SCAF.ViewModels
                    QtdProduto = 150,
                    Sc = ScServico.GetSc().ToList().Find(sc => sc.codigo.Contains("014524")).codigo,
                    StatusDaOferta = "Cotação Realizada",
+                },
+
+                new CotacaoServico
+                {
+                   Codigo = "2605",
+                   DataEmisao = DateTime.Now,
+                   DataFim = DateTime.Now.AddDays(5),
+                   Custo = 3000,
+                   Desconto = 500,
+                   FormaPagamento = "A vista",
+                   Observacao ="Preço cotado a prazo 10% de desconto.",
+                   Servico = Servicos.ListaServico().ToList().Find(cod => cod.Codigo.Equals("2154780")),
+                   NumeroContrato = 15465,
+                   Sc = ScServico.GetSc().ToList().Find(sc => sc.codigo.Contains("054875")).codigo,
+                   StatusDaOferta = "Cotação Realizada",
                 }
             };
 

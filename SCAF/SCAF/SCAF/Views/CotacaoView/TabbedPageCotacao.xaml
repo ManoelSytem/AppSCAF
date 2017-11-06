@@ -26,13 +26,15 @@
                                FontSize="25" />
                          <Label Text="{Binding Codigo}"
                                FontSize="Medium" />
-                        </StackLayout>
+                        </StackLayout  >
+                         <StackLayout Orientation="Horizontal">
                             <Label Text="SC"
                                Margin="8"
                                FontSize="Medium" />
                             <Label Text="{Binding Sc}"
                                Margin="8"    
                                FontSize="Micro" />
+                            </StackLayout>
                             <Label Text="{Binding StatusDaOferta}"
                                Margin="8,2,8,4"
                                FontSize="Small" />
@@ -48,7 +50,23 @@
         </ListView.ItemTemplate>
     </ListView>
     </ContentPage>
-    
     <ContentPage Title="Cadastrar">
+        <StackLayout>
+            <Entry Placeholder="Sc" x:Name="txtSc" Text="{Binding Sc, Mode=TwoWay}"/>
+            <Entry Placeholder="Observação" x:Name="txtObservacao" Text="{Binding Observacao, Mode=TwoWay}" />
+            <Entry Keyboard="Numeric" Placeholder="Custo" x:Name="txtCusto" Text="{Binding Custo,Mode=TwoWay}"/>
+            <Entry Keyboard="Numeric" Placeholder="Desconto" x:Name="txtDesconto" Text="{Binding Desconto,Mode=TwoWay}"/>
+            <Entry Placeholder="Forma de Pagamento" x:Name="txtPgto" Text="{Binding FormaPagamento, Mode=TwoWay}"/>
+            <Entry Placeholder="Data Limite da oferta" x:Name="txtLmtOferta" Text="{Binding DataFim, Mode=TwoWay}"/>
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Produto"
+                Clicked="ExibirFormsPro" />
+                <Button Text="Serviço"
+                Clicked="ExibirFormsServi" />
+            </StackLayout>
+                <!--Command="{Binding CreateCommand}-->
+            <Button Text="Enviar Cotação"
+                Clicked="IncluirCotação" />
+        </StackLayout>
     </ContentPage>
 </TabbedPage>

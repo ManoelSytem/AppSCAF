@@ -26,5 +26,20 @@ namespace SCAF.Views
         {
 
         }
+
+        private void IncluirCotação(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ExibirFormsPro(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ExibirFormsServi(object sender, EventArgs e)
+        {
+
+        }
     }
 }

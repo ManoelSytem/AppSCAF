@@ -24,42 +24,36 @@ namespace SCAF.Services
 
             ListSevico.Add(new Servico()
             {
-                 NomeServico = "Outdoor",
-                 Contrato = "2154780",
-                 Categoria = "Publicidade e Marketing"
-
+                 Nome = "Outdoor",
+                 Codigo  = "2154780"
             });
 
 
             ListSevico.Add(new Servico()
             {
-                NomeServico = "Artigos de Decoração: Molduras",
-                Contrato = "2154780",
-                Categoria = "Arquitetura e Decoração"
+                Nome = "Artigos de Decoração: Molduras",
+                Codigo = "2154780",
 
             });
 
             ListSevico.Add(new Servico()
             {
-                NomeServico = "Advocacia Ambiental",
-                Contrato = "2154780",
-                Categoria = "Advocacia e Investigações"
+                Nome = "Advocacia Ambiental",
+                Codigo = "2154780",
 
             });
 
             ListSevico.Add(new Servico()
             {
-                NomeServico = "Aquecedores de Água",
-                Contrato = "2154780",
-                Categoria = "Construção, Limpeza e Conservação"
+                Nome = "Aquecedores de Água",
+                Codigo = "2154780",
 
             });
 
             ListSevico.Add(new Servico()
             {
-                NomeServico = "Alarmes de Segurança",
-                Contrato = "2154780",
-                Categoria = "Segurança"
+                Nome = "Alarmes de Segurança",
+                Codigo = "2154780",
 
             });
 
