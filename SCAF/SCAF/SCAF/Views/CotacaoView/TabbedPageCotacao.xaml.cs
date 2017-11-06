@@ -16,5 +16,15 @@ namespace SCAF.Views
         {
             InitializeComponent();
         }
+
+        private void ListView_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+
+        }
+
+        private void DetalheCotacao(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -2,8 +2,53 @@
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SCAF.Views.TabbedPageCotacao"
+             xmlns:viewModels="clr-namespace:SCAF.ViewModels;assembly=SCAF"
              Title="Cotação">
   <!--Pages can be added as references or inline-->
-  <ContentPage Title="Cotações" />
-  <ContentPage Title="Cadastrar" />
+    <ContentPage Title="Cotações" >
+    <ContentPage.BindingContext>
+        <viewModels:CotacaoViewModel/>
+    </ContentPage.BindingContext>
+    <ListView  x:Name="SolicitacaoCompra" ItemsSource="{Binding Cotacao}"
+           HasUnevenRows="True"
+           BackgroundColor="#ecf0f1"
+           ItemTapped="ListView_ItemTapped"
+           >
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout
+                            BackgroundColor="White"  Margin="8">
+                            <Label Grid.Column="2" Grid.Row="0" Grid.ColumnSpan="2" Text="{Binding DataEmisao}" BackgroundColor="Red" TextColor="White" HorizontalOptions="EndAndExpand" Margin="0,10,-5,0"/>
+                            <StackLayout Orientation="Horizontal">
+                        <Label TextColor="#ff5900" Text="Codigo"
+                               Margin="8"
+                               FontSize="25" />
+                         <Label Text="{Binding Codigo}"
+                               FontSize="Medium" />
+                        </StackLayout>
+                            <Label Text="SC"
+                               Margin="8"
+                               FontSize="Medium" />
+                            <Label Text="{Binding Sc}"
+                               Margin="8"    
+                               FontSize="Micro" />
+                            <Label Text="{Binding StatusDaOferta}"
+                               Margin="8,2,8,4"
+                               FontSize="Small" />
+                        <StackLayout
+                             VerticalOptions="CenterAndExpand"
+                             HorizontalOptions="CenterAndExpand"
+                             Orientation="Horizontal">
+                            <Button Text="Detalhe"  IsVisible="{Binding IsVisible}" Clicked="DetalheCotacao"/>
+                        </StackLayout>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+    </ContentPage>
+    
+    <ContentPage Title="Cadastrar">
+    </ContentPage>
 </TabbedPage>
