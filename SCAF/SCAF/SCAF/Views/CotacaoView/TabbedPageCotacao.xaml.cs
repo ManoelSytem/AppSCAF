@@ -20,7 +20,8 @@ namespace SCAF.Views
             InitializeComponent();
             SolicitacaoCompraViewModel = new SolicitacaoCompraViewModel();
             ScPicker.ItemsSource = SolicitacaoCompraViewModel.ScList();
-
+            FornecedorViewModel FornecedorViewModel = FornecedorViewModel.Instance;
+            FornecedorPicker.ItemsSource = FornecedorViewModel.ListFornecedor();
             FormaPagamentoViewModel = new FormaPagamentoViewModel();
             FomaPgtoPicker.ItemsSource = FormaPagamentoViewModel.ListFormaPagamento();
         }

@@ -9,26 +9,17 @@ using System;
 namespace SCAF.ViewModels
 {
        
-    public class FornecedorViewModel : NotificarBase
+    public sealed class FornecedorViewModel : NotificarBase
     {
 
-        public string nomeFantasia;
-        public string NomeFantasia { get { return nomeFantasia; } set { nomeFantasia = value; Notificar(); } }
-        public string inscricaoEstadual;
-        public string InscricaoEstadual { get { return inscricaoEstadual; } set { inscricaoEstadual = value; Notificar(); } }
-        public string cnpj;
-        public string Cnpj { get { return cnpj; } set { cnpj = value; Notificar(); } }
-        public string endereco;
-        public string Endereco { get { return endereco; } set { endereco = value; Notificar(); } }
-        public string email;
-        public string Email { get { return email; } set { email = value; Notificar(); } }
-        public string telefone;
-        public string Telefone { get { return telefone; } set { telefone = value; Notificar(); } }
-        public string razaoSocial;
-        public string RazaoSocial { get { return razaoSocial; } set { razaoSocial = value; Notificar(); } }
-        public string categoria;
-        public string Categoria { get { return categoria; } set { categoria = value; Notificar(); } }
-
+        private static readonly FornecedorViewModel instance = new FornecedorViewModel();
+        public static FornecedorViewModel Instance
+        {
+            get
+            {
+                return instance;
+            }
+        }
 
         private Fornecedor _oldFornecedor;
         public List<Fornecedor> lisfornecedor;
@@ -44,6 +35,7 @@ namespace SCAF.ViewModels
             }
         }
         public ApiServiceFornecedor servicoFonecedor;
+
 
         public FornecedorViewModel()
         {
@@ -118,10 +110,16 @@ namespace SCAF.ViewModels
             }
         }
 
-        public void DetalhaFornecedor(Fornecedor forn)
-        {
-            NomeFantasia = forn.NomeFantasia;
-        }
 
+        public List<string> ListFornecedor()
+        {
+            var ListForn = new List<string>();
+            foreach (var forn in fornecedor)
+            {
+                ListForn.Add(forn.NomeFantasia + "-" + forn.Cnpj);
+            }
+
+            return ListForn;
+        }
     }
 }

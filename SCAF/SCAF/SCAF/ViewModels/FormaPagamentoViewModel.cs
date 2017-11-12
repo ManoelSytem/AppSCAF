@@ -17,7 +17,10 @@ namespace SCAF.ViewModels
                 new FormaPagamento { Codigo = 2, Nome = "A Prazo" },
                 new FormaPagamento { Codigo = 3, Nome = "Cartão de Crédito" },
                 new FormaPagamento { Codigo = 4, Nome = "Boleto Bancario" },
-                new FormaPagamento { Codigo = 5, Nome = "Permuta" },
+                new FormaPagamento { Codigo = 6, Nome = "Permuta" },
+                new FormaPagamento { Codigo = 7, Nome = "Mensal - Dinheiro" },
+                new FormaPagamento { Codigo = 8, Nome = "Anual - Dinheiro" },
+                new FormaPagamento { Codigo = 8, Nome = "Cheque" },
             };
         }
 
