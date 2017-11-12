@@ -52,7 +52,7 @@
     </ContentPage>
     <ContentPage Title="Cadastrar">
         <StackLayout>
-            <Entry Placeholder="Sc" x:Name="txtSc" Text="{Binding Sc, Mode=TwoWay}"/>
+            <Picker x:Name="ScPicker" Title="Solicitação de Compra"></Picker>
             <Entry Placeholder="Observação" x:Name="txtObservacao" Text="{Binding Observacao, Mode=TwoWay}" />
             <Entry Keyboard="Numeric" Placeholder="Custo" x:Name="txtCusto" Text="{Binding Custo,Mode=TwoWay}"/>
             <Entry Keyboard="Numeric" Placeholder="Desconto" x:Name="txtDesconto" Text="{Binding Desconto,Mode=TwoWay}"/>

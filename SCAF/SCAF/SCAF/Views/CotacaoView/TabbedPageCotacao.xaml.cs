@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SCAF.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,9 +13,13 @@ namespace SCAF.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class TabbedPageCotacao : TabbedPage
     {
+        public SolicitacaoCompraViewModel SolicitacaoCompraViewModel;
+
         public TabbedPageCotacao ()
         {
             InitializeComponent();
+            SolicitacaoCompraViewModel = new SolicitacaoCompraViewModel();
+            ScPicker.ItemsSource = SolicitacaoCompraViewModel.ScList();
         }
 
         private void ListView_ItemTapped(object sender, ItemTappedEventArgs e)

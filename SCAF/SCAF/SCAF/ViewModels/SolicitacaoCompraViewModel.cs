@@ -82,5 +82,15 @@ namespace SCAF.ViewModels
                 SolicitacaoCompra.Insert(Index, sc);
         }
 
+        public List<string> ScList()
+        {
+            var LisSolicitacaoCompra = new List<string>();
+            foreach (var sc in SolicitacaoCompra)
+            {
+                LisSolicitacaoCompra.Add(sc.codigo + "-" + sc.Tipo);
+            }
+
+            return LisSolicitacaoCompra;
+        }
     }
 }

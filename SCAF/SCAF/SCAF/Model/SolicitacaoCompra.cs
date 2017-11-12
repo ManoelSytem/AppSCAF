@@ -33,4 +33,5 @@ namespace SCAF.Model
         public string Tipo { get; set; }
 
     }
+
 }
