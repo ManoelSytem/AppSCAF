@@ -51,22 +51,28 @@
     </ListView>
     </ContentPage>
     <ContentPage Title="Cadastrar">
-        <StackLayout>
+        <ScrollView>
+            <StackLayout>
             <Picker x:Name="ScPicker" Title="Solicitação de Compra"></Picker>
             <Entry Placeholder="Observação" x:Name="txtObservacao" Text="{Binding Observacao, Mode=TwoWay}" />
-            <Entry Keyboard="Numeric" Placeholder="Custo" x:Name="txtCusto" Text="{Binding Custo,Mode=TwoWay}"/>
+            <Entry IsEnabled="False" Keyboard="Numeric" Placeholder="Custo R$ 0,00" x:Name="txtCusto" Text="{Binding Custo,Mode=TwoWay}"/>
             <Entry Keyboard="Numeric" Placeholder="Desconto" x:Name="txtDesconto" Text="{Binding Desconto,Mode=TwoWay}"/>
             <Entry Placeholder="Forma de Pagamento" x:Name="txtPgto" Text="{Binding FormaPagamento, Mode=TwoWay}"/>
             <Entry Placeholder="Data Limite da oferta" x:Name="txtLmtOferta" Text="{Binding DataFim, Mode=TwoWay}"/>
-            <StackLayout Orientation="Horizontal">
-                <Button Text="Produto"
-                Clicked="ExibirFormsPro" />
-                <Button Text="Serviço"
-                Clicked="ExibirFormsServi" />
-            </StackLayout>
-                <!--Command="{Binding CreateCommand}-->
+            <!--Cotação de Produto-->
+            <Picker x:Name="FornecedorPicker" Title="Fornecedor"></Picker>
+            <Picker x:Name="ProdutoPicker" Title="Produto"></Picker>
+            <Entry Keyboard="Numeric" Placeholder="Quantidade" x:Name="txtQuantidade" />
+            <!-- fim-->
+            <!--Cotação de Serviço-->
+            <Picker x:Name="ServicoPicker" Title="Serviço"></Picker>
+            <Entry Keyboard="Numeric" Placeholder="Numero do Contrato" x:Name="txtContrato" />
+            <Entry Keyboard="Numeric" Placeholder="Data de Início" x:Name="txtContratoFIm" />
+            <Entry Keyboard="Numeric" Placeholder="Data de Fím" x:Name="txtContratoInicio" />
+            <!-- fim-->
             <Button Text="Enviar Cotação"
                 Clicked="IncluirCotação" />
         </StackLayout>
+        </ScrollView>
     </ContentPage>
 </TabbedPage>

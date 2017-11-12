@@ -37,14 +37,6 @@ namespace SCAF.Views
 
         }
 
-        private void ExibirFormsPro(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ExibirFormsServi(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }
