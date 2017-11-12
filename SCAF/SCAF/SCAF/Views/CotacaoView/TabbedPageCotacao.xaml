@@ -67,8 +67,14 @@
             <!--Cotação de Serviço-->
             <Picker x:Name="ServicoPicker" Title="Serviço"></Picker>
             <Entry Keyboard="Numeric" Placeholder="Numero do Contrato" x:Name="txtContrato" />
-            <Entry Keyboard="Numeric" Placeholder="Data de Início" x:Name="txtContratoFIm" />
-            <Entry Keyboard="Numeric" Placeholder="Data de Fím" x:Name="txtContratoInicio" />
+            <Label Text="Data Ínicio"
+                               Margin="3"
+                               FontSize="14" />
+            <DatePicker x:Name="DataInicioCotacaoDataPicker" ></DatePicker>
+            <Label Text="Data Fim"
+                               Margin="3"
+                               FontSize="14" />
+            <DatePicker x:Name="DataFimCotacaoDataPicker" ></DatePicker>
             <!-- fim-->
             <Button Text="Enviar Cotação"
                 Clicked="IncluirCotação" />

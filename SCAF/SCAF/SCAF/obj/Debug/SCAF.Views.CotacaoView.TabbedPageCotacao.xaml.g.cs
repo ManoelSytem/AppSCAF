@@ -52,10 +52,10 @@ namespace SCAF.Views {
         private global::Xamarin.Forms.Entry txtContrato;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Entry txtContratoFIm;
+        private global::Xamarin.Forms.DatePicker DataInicioCotacaoDataPicker;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Entry txtContratoInicio;
+        private global::Xamarin.Forms.DatePicker DataFimCotacaoDataPicker;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
@@ -72,8 +72,8 @@ namespace SCAF.Views {
             txtQuantidade = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "txtQuantidade");
             ServicoPicker = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Picker>(this, "ServicoPicker");
             txtContrato = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "txtContrato");
-            txtContratoFIm = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "txtContratoFIm");
-            txtContratoInicio = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "txtContratoInicio");
+            DataInicioCotacaoDataPicker = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.DatePicker>(this, "DataInicioCotacaoDataPicker");
+            DataFimCotacaoDataPicker = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.DatePicker>(this, "DataFimCotacaoDataPicker");
         }
     }
 }
