@@ -15,6 +15,7 @@ namespace SCAF.ViewModels
         private ProdutoServico Produtos;
         private RepositorioServico Servicos;
 
+        public ObservableCollection<FormaPagamento> FormaPagameto { get; set; }
         public ObservableCollection<Cotacao> Cotacao { get; set; }
        
         public CotacaoViewModel()

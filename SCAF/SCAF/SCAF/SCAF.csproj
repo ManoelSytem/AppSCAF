@@ -51,6 +51,7 @@
     <Compile Include="Model\Cotacao.cs" />
     <Compile Include="Model\CotacaoProduto.cs" />
     <Compile Include="Model\CotacaoServico.cs" />
+    <Compile Include="Model\FormaPagamento.cs" />
     <Compile Include="Model\Fornecedor.cs" />
     <Compile Include="Model\Produto.cs" />
     <Compile Include="Model\Servico.cs" />
@@ -69,6 +70,7 @@
     <Compile Include="Services\StringToColorConverter.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
     <Compile Include="ViewModels\CotacaoViewModel.cs" />
+    <Compile Include="ViewModels\FormaPagamentoViewModel.cs" />
     <Compile Include="ViewModels\FornecedorViewModel.cs" />
     <Compile Include="ViewModels\LoginViewModel.cs" />
     <Compile Include="ViewModels\NotificarBase.cs" />

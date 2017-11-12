@@ -58,7 +58,7 @@
             <Entry Placeholder="Observação" x:Name="txtObservacao" Text="{Binding Observacao, Mode=TwoWay}" />
             <Entry IsEnabled="False" Keyboard="Numeric" Placeholder="Custo R$ 0,00" x:Name="txtCusto" Text="{Binding Custo,Mode=TwoWay}"/>
             <Entry Keyboard="Numeric" Placeholder="Desconto" x:Name="txtDesconto" Text="{Binding Desconto,Mode=TwoWay}"/>
-            <Entry Placeholder="Forma de Pagamento" x:Name="txtPgto" Text="{Binding FormaPagamento, Mode=TwoWay}"/>
+            <Picker  x:Name="FomaPgtoPicker" Title="Forma de Pagamento"></Picker>
             <Entry Placeholder="Data Limite da oferta" x:Name="txtLmtOferta" Text="{Binding DataFim, Mode=TwoWay}"/>
                
             <Picker  x:Name="FornecedorPicker" Title="Fornecedor"></Picker>
