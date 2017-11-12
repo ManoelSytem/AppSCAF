@@ -13,13 +13,16 @@ namespace SCAF.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class TabbedPageCotacao : TabbedPage
     {
-        public SolicitacaoCompraViewModel SolicitacaoCompraViewModel;
-
+        private SolicitacaoCompraViewModel SolicitacaoCompraViewModel;
+        private FormaPagamentoViewModel FormaPagamentoViewModel;
         public TabbedPageCotacao ()
         {
             InitializeComponent();
             SolicitacaoCompraViewModel = new SolicitacaoCompraViewModel();
             ScPicker.ItemsSource = SolicitacaoCompraViewModel.ScList();
+
+            FormaPagamentoViewModel = new FormaPagamentoViewModel();
+            FomaPgtoPicker.ItemsSource = FormaPagamentoViewModel.ListFormaPagamento();
         }
 
         private void ListView_ItemTapped(object sender, ItemTappedEventArgs e)
