@@ -37,6 +37,31 @@ namespace SCAF.Views
 
         }
 
-        
+        private void ExibirFormularioTipoCotacao(object sender, EventArgs e)
+        {
+            var tipoCotacao = ScPicker.Items[ScPicker.SelectedIndex];
+            if (tipoCotacao.Contains("Serviço"))
+            {
+                ExibirFormCotacaoProduto(false);
+                ExibirFormCotacaoServico(true);
+            }
+            else
+            {
+                ExibirFormCotacaoServico(false);
+                ExibirFormCotacaoProduto(true);
+            }
+
+            
+        }
+
+        private void ExibirFormCotacaoServico(Boolean valor)
+        {
+            FormCotacaoServico.IsVisible = valor;
+        }
+
+        private void ExibirFormCotacaoProduto(Boolean valor)
+        {
+            FormCotacaoProduto.IsVisible = valor;
+        }
     }
 }

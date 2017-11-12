@@ -87,7 +87,7 @@ namespace SCAF.ViewModels
             var LisSolicitacaoCompra = new List<string>();
             foreach (var sc in SolicitacaoCompra)
             {
-                LisSolicitacaoCompra.Add(sc.codigo + "-" + sc.Tipo);
+                LisSolicitacaoCompra.Add("SC-"+sc.codigo + "-" + sc.Tipo);
             }
 
             return LisSolicitacaoCompra;
