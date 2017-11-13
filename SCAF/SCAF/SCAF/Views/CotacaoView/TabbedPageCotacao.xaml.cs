@@ -82,5 +82,22 @@ namespace SCAF.Views
                 ProdutoPicker.ItemsSource = returnBusca;
                 
         }
+
+        private void ProdutoPicker_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(ProdutoPicker.SelectedIndex != -1) { 
+            var selecao = ProdutoPicker.Items[ProdutoPicker.SelectedIndex];
+
+            if (selecao.Contains("Novo"))
+            {
+              txtNovoProduto.IsVisible = true;
+            }
+            else
+            {
+              txtNovoProduto.IsVisible = false;
+            }
+
+            }
+        }
     }
 }

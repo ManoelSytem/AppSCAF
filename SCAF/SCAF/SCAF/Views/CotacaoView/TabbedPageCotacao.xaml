@@ -68,8 +68,11 @@
             <Picker  x:Name="FomaPgtoPicker" Title="Forma de Pagamento"></Picker>
              <!--Cotação de Produto-->
             <StackLayout  IsVisible="False" x:Name="FormCotacaoProduto">
-            <Picker  x:Name="ProdutoPicker" Title="Produto"></Picker>
-             <Entry  Keyboard="Numeric" Placeholder="Quantidade" x:Name="txtQuantidade" />
+            <Picker  x:Name="ProdutoPicker" Title="Produto"
+                     SelectedIndexChanged="ProdutoPicker_SelectedIndexChanged"></Picker>
+            <Entry  IsVisible="False"  Keyboard="Numeric" Placeholder="Digite o nome  do Produto" x:Name="txtNovoProduto" />
+            <Entry  Keyboard="Numeric" Placeholder="Quantidade" x:Name="txtQuantidade" />
+            <Entry  Keyboard="Numeric" Placeholder="Valor" x:Name="txtValor" />
             </StackLayout>
                 <!-- fim-->
             <!--Cotação de Serviço-->
