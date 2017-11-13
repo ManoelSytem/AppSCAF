@@ -15,6 +15,7 @@ namespace SCAF.Views
     {
         private SolicitacaoCompraViewModel SolicitacaoCompraViewModel;
         private FormaPagamentoViewModel FormaPagamentoViewModel;
+       
         public TabbedPageCotacao ()
         {
             InitializeComponent();
@@ -66,6 +67,20 @@ namespace SCAF.Views
         private void ExibirFormCotacaoProduto(Boolean valor)
         {
             FormCotacaoProduto.IsVisible = valor;
+        }
+
+        private void ObterProdutoOuServicoPorFornecedor(object sender, EventArgs e)
+        {
+
+            var CategoriaFornecedor = FornecedorPicker.Items[FornecedorPicker.SelectedIndex];
+            int indice = CategoriaFornecedor.IndexOf("-");
+            CotacaoViewModel CotacaoViewModel = CotacaoViewModel.Instance;
+            
+            var returnBusca = CotacaoViewModel.ObterProdutoOuServicoPorFornecedorCategoria(CategoriaFornecedor.Substring(indice + 1));
+                
+                ServicoPicker.ItemsSource = returnBusca;
+                ProdutoPicker.ItemsSource = returnBusca;
+                
         }
     }
 }

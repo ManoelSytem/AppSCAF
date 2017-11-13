@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace SCAF.ViewModels
 {
-    public class CotacaoViewModel : NotificarBase
+    public sealed class CotacaoViewModel : NotificarBase
     {
         public SolicitacaoCompraService ScServico;
         private ProdutoServico Produtos;
@@ -17,7 +17,15 @@ namespace SCAF.ViewModels
 
         public ObservableCollection<FormaPagamento> FormaPagameto { get; set; }
         public ObservableCollection<Cotacao> Cotacao { get; set; }
-       
+        public List<string> ListaProdutoServico;
+        private static readonly CotacaoViewModel instance = new CotacaoViewModel();
+        public static CotacaoViewModel Instance
+        {
+            get
+            {
+                return instance;
+            }
+        }
         public CotacaoViewModel()
         {
             Produtos = new ProdutoServico();
@@ -57,6 +65,26 @@ namespace SCAF.ViewModels
                 }
             };
 
+        }
+
+        public List<string> ObterProdutoOuServicoPorFornecedorCategoria(string categoria)
+        {
+           ListaProdutoServico = new List<string>();
+           ListaProdutoServico.Add("Novo");
+            var ListProdutos  = Produtos.ListaProduto().Where(l => (l.categoria.ToLower().Contains(categoria.ToLower())));
+           var ListServico = Servicos.ListaServico().Where(l => (l.Nome.ToLower().Contains(categoria.ToLower())));
+
+            foreach (var i in ListProdutos)
+            {
+                ListaProdutoServico.Add("Produto-"+i.categoria+"-"+i.Nome);
+            }
+
+            foreach (var i in ListServico)
+            {
+                ListaProdutoServico.Add("Serviço-"+ i.Nome);
+            }
+
+            return ListaProdutoServico;
         }
 
     }

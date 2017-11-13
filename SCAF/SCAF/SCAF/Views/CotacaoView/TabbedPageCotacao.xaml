@@ -57,10 +57,14 @@
                     SelectedIndexChanged="ExibirFormularioTipoCotacao"></Picker>
             <Entry Placeholder="Observação" x:Name="txtObservacao" Text="{Binding Observacao, Mode=TwoWay}" />
             <Entry IsEnabled="False" Keyboard="Numeric" Placeholder="Custo R$ 0,00" x:Name="txtCusto" Text="{Binding Custo,Mode=TwoWay}"/>
-                <Entry Keyboard="Numeric" Placeholder="Desconto" x:Name="txtDesconto" Text="{Binding Desconto,Mode=TwoWay}"/>
-                <Entry Placeholder="Data Limite da oferta" x:Name="txtLmtOferta" Text="{Binding DataFim, Mode=TwoWay}"/>
-               
-            <Picker  x:Name="FornecedorPicker" Title="Fornecedor"></Picker>
+            <Entry Keyboard="Numeric" Placeholder="Desconto" x:Name="txtDesconto" Text="{Binding Desconto,Mode=TwoWay}"/>
+            <Label   Text="Data Límite da oferta"
+                               Margin="3"
+                               FontSize="16" />
+            <DatePicker  x:Name="DataLimiteDaOferta" ></DatePicker>
+
+            <Picker  x:Name="FornecedorPicker" Title="Fornecedor"
+                     SelectedIndexChanged="ObterProdutoOuServicoPorFornecedor"></Picker>
             <Picker  x:Name="FomaPgtoPicker" Title="Forma de Pagamento"></Picker>
              <!--Cotação de Produto-->
             <StackLayout  IsVisible="False" x:Name="FormCotacaoProduto">

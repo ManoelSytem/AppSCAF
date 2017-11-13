@@ -51,6 +51,27 @@ namespace SCAF.ViewModels
                 NomeFantasia = "Stefanini",
                 Cnpj = "65.182.980/0001-36",
                 Categoria = "Tecnologia"
+               },
+
+                new Fornecedor
+               {
+                NomeFantasia = "disalli",
+                Cnpj = "41.429.286/0001-02",
+                Categoria = "Alimentos"
+               },
+
+                 new Fornecedor
+               {
+                NomeFantasia = "Agtal",
+                Cnpj = "98.596.467/0001-40",
+                Categoria = "Alimentos"
+               },
+
+               new Fornecedor
+               {
+                NomeFantasia = "Fibromax",
+                Cnpj = "28.180.381/0001-57",
+                Categoria = "Indústria e Comércio"
                }
 
             };
@@ -116,7 +137,7 @@ namespace SCAF.ViewModels
             var ListForn = new List<string>();
             foreach (var forn in fornecedor)
             {
-                ListForn.Add(forn.NomeFantasia + "-" + forn.Cnpj);
+                ListForn.Add(forn.NomeFantasia + "-" + forn.Categoria);
             }
 
             return ListForn;

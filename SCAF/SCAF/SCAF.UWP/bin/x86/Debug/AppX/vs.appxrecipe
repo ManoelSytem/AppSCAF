@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-11-12T19:54:35.702</Modified>
+      <Modified>2017-11-13T00:19:57.892</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\bin\x86\Debug\SCAF.UWP.exe">
       <PackagePath>entrypoint\SCAF.UWP.exe</PackagePath>
-      <Modified>2017-11-12T19:54:32.392</Modified>
+      <Modified>2017-11-13T00:19:55.066</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\netob\.nuget\packages\Microsoft.CSharp\4.3.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -605,7 +605,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF\bin\Debug\SCAF.dll">
       <PackagePath>SCAF.dll</PackagePath>
-      <Modified>2017-11-12T19:54:17.315</Modified>
+      <Modified>2017-11-13T00:19:48.131</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF\bin\Debug\SCAF.dll.config">
       <PackagePath>SCAF.dll.config</PackagePath>
@@ -867,11 +867,11 @@
     <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-11-06T02:08:45.889</Modified>
+      <Modified>2017-11-12T22:23:49.726</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF.UWP\bin\x86\Debug\Core\SCAF.UWP.exe">
       <PackagePath>SCAF.UWP.exe</PackagePath>
-      <Modified>2017-11-12T19:54:35.690</Modified>
+      <Modified>2017-11-13T00:19:57.883</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
