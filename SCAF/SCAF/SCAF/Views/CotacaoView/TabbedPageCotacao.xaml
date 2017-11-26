@@ -4,12 +4,13 @@
              x:Class="SCAF.Views.TabbedPageCotacao"
              xmlns:viewModels="clr-namespace:SCAF.ViewModels;assembly=SCAF"
              Title="Cotação">
-  <!--Pages can be added as references or inline-->
-    <ContentPage Title="Cotações" >
     <ContentPage.BindingContext>
         <viewModels:CotacaoViewModel/>
     </ContentPage.BindingContext>
-    <ListView  x:Name="SolicitacaoCompra" ItemsSource="{Binding Cotacao}"
+  <!--Pages can be added as references or inline-->
+    <ContentPage Title="Cotações" >
+    
+    <ListView  x:Name="ListViewCotacao" ItemsSource="{Binding Cotacao}"
            HasUnevenRows="True"
            BackgroundColor="#ecf0f1"
            ItemTapped="ListView_ItemTapped"
@@ -43,13 +44,18 @@
                              HorizontalOptions="CenterAndExpand"
                              Orientation="Horizontal">
                             <Button Text="Detalhe"  IsVisible="{Binding IsVisible}" Clicked="DetalheCotacao"/>
-                        </StackLayout>
+                                <Button BackgroundColor="#0099ff" Text="Alterar"
+                          IsVisible="{Binding IsVisible}" Clicked="EditarCotação"/>
+                                <Button BackgroundColor="#ff8c1a" Text="Excluir"
+                          IsVisible="{Binding IsVisible}" Clicked="DeletaCotação"/>
+                            </StackLayout>
                     </StackLayout>
                 </ViewCell>
             </DataTemplate>
         </ListView.ItemTemplate>
     </ListView>
     </ContentPage>
+    <!--Cadastrar Cotação-->
     <ContentPage Title="Cadastrar">
         <ScrollView>
             <StackLayout>

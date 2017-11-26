@@ -25,5 +25,7 @@ namespace SCAF.Model
         public string FormaPagamento { get; set; }
 
         public string Sc { get; set; }
+
+        public bool IsVisible { get; set; }
     }
 }

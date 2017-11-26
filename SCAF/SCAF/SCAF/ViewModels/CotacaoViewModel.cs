@@ -14,7 +14,7 @@ namespace SCAF.ViewModels
         public SolicitacaoCompraService ScServico;
         private ProdutoServico Produtos;
         private RepositorioServico Servicos;
-
+        private Cotacao _oldCotacao;
         public ObservableCollection<FormaPagamento> FormaPagameto { get; set; }
         public ObservableCollection<Cotacao> Cotacao { get; set; }
         public List<string> ListaProdutoServico;
@@ -87,5 +87,41 @@ namespace SCAF.ViewModels
             return ListaProdutoServico;
         }
 
+        public void HideOrShowCotacao(Cotacao cotacao)
+        {
+            if (_oldCotacao == cotacao)
+            {
+                cotacao.IsVisible = !cotacao.IsVisible;
+                UpdateCotacao(cotacao);
+            }
+            else
+            {
+                if (_oldCotacao != null)
+                {
+                    _oldCotacao.IsVisible = false;
+                    UpdateCotacao(cotacao);
+                }
+                cotacao.IsVisible = true;
+                UpdateCotacao(cotacao);
+            }
+
+            _oldCotacao = cotacao;
+        }
+
+        private void UpdateCotacao(Cotacao cotacao)
+        {
+            var Index = Cotacao.IndexOf(cotacao);
+            if (Index != -1)
+            {
+                Cotacao.Remove(cotacao);
+                Cotacao.Insert(Index, cotacao);
+            }
+            else
+            {
+                var caunt = Cotacao.Count;
+                cotacao.IsVisible = false;
+                Cotacao.Insert(caunt, cotacao);
+            }
+        }
     }
 }

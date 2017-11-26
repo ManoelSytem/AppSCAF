@@ -1,10 +1,6 @@
-﻿using SCAF.ViewModels;
+﻿using SCAF.Model;
+using SCAF.ViewModels;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -13,9 +9,10 @@ namespace SCAF.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class TabbedPageCotacao : TabbedPage
     {
+        private Cotacao cotacao;
         private SolicitacaoCompraViewModel SolicitacaoCompraViewModel;
         private FormaPagamentoViewModel FormaPagamentoViewModel;
-       
+        
         public TabbedPageCotacao ()
         {
             InitializeComponent();
@@ -29,7 +26,9 @@ namespace SCAF.Views
 
         private void ListView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
-
+            var vm = BindingContext as CotacaoViewModel;
+            cotacao = e.Item as Cotacao;
+            vm.HideOrShowCotacao(cotacao);
         }
 
         private void DetalheCotacao(object sender, EventArgs e)
@@ -98,6 +97,16 @@ namespace SCAF.Views
             }
 
             }
+        }
+
+        private void EditarCotação(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DeletaCotação(object sender, EventArgs e)
+        {
+
         }
     }
 }

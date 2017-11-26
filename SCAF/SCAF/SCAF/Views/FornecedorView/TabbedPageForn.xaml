@@ -37,12 +37,11 @@
                              HorizontalOptions="CenterAndExpand"
                              Orientation="Horizontal">
                                 <Button Text="Detalhe"  IsVisible="{Binding IsVisible}" Clicked="DetalheFornecedor"/>
-                                <Button BackgroundColor="#0099ff" Text="Editar"
+                                <Button BackgroundColor="#0099ff" Text="Alterar"
                           IsVisible="{Binding IsVisible}" Clicked="EditarFornecedor"/>
-                                <Button BackgroundColor="#ff8c1a" Text="Delete"
+                                <Button BackgroundColor="#ff8c1a" Text="Excluir"
                           IsVisible="{Binding IsVisible}" Clicked="DeletaFornecedor"/>
                         </StackLayout>
-                          
                         </StackLayout>
                 </ViewCell>
             </DataTemplate>
