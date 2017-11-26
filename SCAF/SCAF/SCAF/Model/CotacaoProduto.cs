@@ -10,7 +10,12 @@ namespace SCAF.Model
     {
         public int QtdProduto { get; set; }
 
+        public string Nome { get; set; }
+
+        //alterar para tipo produto
         public Produto Produto { get; set; }
+
+        public double Valor { get; set; }
 
     }
 }

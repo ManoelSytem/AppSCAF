@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SCAF.Views.CotacaoView.CotacaoPageDetalhe" Title="Cotação Detalhe">
+    <ContentPage.Content>
+            <ScrollView>
+                <StackLayout x:Name="stackCotacao">
+                    <Label Text="Solicitante de Compra"
+                               Margin="3"
+                               FontAttributes="Bold"
+                               FontSize="Medium" />
+                    <Label x:Name="lblSolicao"
+                               Margin="3"
+                               FontSize="Medium" />
+                    <Label Text="Observação"
+                               Margin="3"
+                               FontAttributes="Bold"
+                               FontSize="Medium" />
+                    <Label x:Name="lblObservacao"
+                               Margin="3"
+                               FontSize="Medium" />
+                    <Label Text="Custo"
+                               Margin="3"
+                               FontAttributes="Bold"
+                               FontSize="Medium" />
+                    <Label  x:Name="lblCusto"
+                               Margin="3"
+                               FontSize="Medium" />
+                    <Label Text="Desconto"
+                               Margin="3"
+                               FontAttributes="Bold"
+                               FontSize="Medium" />
+                    <Label x:Name="lblDesconto"
+                               Margin="3"
+                               FontSize="Medium" />
+
+                    <Label Text="Data da Limite da Oferta"
+                               Margin="3"
+                               FontAttributes="Bold"
+                               FontSize="Medium" />
+                    <Label x:Name="lblDataLimiteOferta" 
+                               Margin="3"
+                               FontSize="Medium" />
+                    <Label Text="Fornecedor"
+                               Margin="3"
+                               FontAttributes="Bold"
+                               FontSize="Medium" />
+                    <Label x:Name="lblFornecedor" 
+                               Margin="3"
+                               FontSize="Medium" />
+                    <Label Text="Forma de Pagamento"
+                               Margin="3"
+                               FontAttributes="Bold"
+                               FontSize="Medium" />
+                    <Label x:Name="lblfrmPgto"
+                               Margin="3"
+                               FontSize="Medium" />
+                </StackLayout>
+            </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -71,21 +71,22 @@
 
             <Picker  x:Name="FornecedorPicker" Title="Fornecedor"
                      SelectedIndexChanged="ObterProdutoOuServicoPorFornecedor"></Picker>
-            <Picker  x:Name="FomaPgtoPicker" Title="Forma de Pagamento"></Picker>
+            <Picker  x:Name="FormaPgtoPicker" Title="Forma de Pagamento"></Picker>
              <!--Cotação de Produto-->
             <StackLayout  IsVisible="False" x:Name="FormCotacaoProduto">
             <Picker  x:Name="ProdutoPicker" Title="Produto"
                      SelectedIndexChanged="ProdutoPicker_SelectedIndexChanged"></Picker>
             <Entry  IsVisible="False"  Keyboard="Numeric" Placeholder="Digite o nome  do Produto" x:Name="txtNovoProduto" />
             <Entry  Keyboard="Numeric" Placeholder="Quantidade" x:Name="txtQuantidade" />
-            <Entry  Keyboard="Numeric" Placeholder="Valor" x:Name="txtValor" />
+            <Entry  Keyboard="Numeric" Placeholder="Valor" x:Name="txtValorProd" />
             </StackLayout>
                 <!-- fim-->
             <!--Cotação de Serviço-->
             <StackLayout IsVisible="False" x:Name="FormCotacaoServico">
             <Picker    x:Name="ServicoPicker" Title="Serviço"></Picker>
             <Entry     Keyboard="Numeric" Placeholder="Numero do Contrato" x:Name="txtContrato" />
-            <Label     Text="Data Ínicio"
+           <Entry  Keyboard="Numeric" Placeholder="Valor" x:Name="txtValorServico" />
+                    <Label     Text="Data Ínicio"
                                Margin="3"
                                FontSize="14" />
             <DatePicker  x:Name="DataInicioCotacaoDataPicker" ></DatePicker>

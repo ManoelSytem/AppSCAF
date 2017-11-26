@@ -24,7 +24,7 @@ namespace SCAF.Model
             var SolicitacaoCompraView = new MasterPageItem() { Title = "Solicitação de Compra", Icon = ImageSource.FromResource("SCAF.Resource.sc_icon.png"), TargetType = typeof(SolicitacaoCompraPage) };
             var FornecedoView = new MasterPageItem() { Title = "Fornecedores", Icon = ImageSource.FromResource("SCAF.Resource.b2b.png"), TargetType = typeof(TabbedPageForn) };
             var CotacaoView = new MasterPageItem() { Title = "Cotação", Icon = ImageSource.FromResource("SCAF.Resource.Icone_dolar.png"), TargetType = typeof(TabbedPageCotacao) };
-            var AutorizacaoFview = new MasterPageItem() { Title = "Autorização de Fornecimento", Icon = ImageSource.FromResource("SCAF.Resource.icone_forne.png"), TargetType = typeof(TabbedPageForn) };
+            var AutorizacaoFview = new MasterPageItem() { Title = "Autorização de Fornecimento", Icon = ImageSource.FromResource("SCAF.Resource.icone_forne.png"), TargetType = typeof(AutorizacaoFornecimentoPage) };
             // Adicionando items no menuLista
             menuLista.Add(HomeView);
             menuLista.Add(SolicitacaoCompraView);

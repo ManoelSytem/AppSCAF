@@ -27,5 +27,7 @@ namespace SCAF.Model
         public string Sc { get; set; }
 
         public bool IsVisible { get; set; }
+
+        public string Fornecedor { get; set; }
     }
 }

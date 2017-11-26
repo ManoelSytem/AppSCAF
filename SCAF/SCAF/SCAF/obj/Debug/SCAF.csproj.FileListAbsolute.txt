@@ -78,3 +78,4 @@ C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF\obj\Debug\SCAF.View
 C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF\obj\Debug\SCAF.dll
 C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF\obj\Debug\SCAF.pdb
 C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF\obj\Debug\SCAF.csprojResolveAssemblyReference.cache
+C:\Users\netob\DesenvolvimentoXamarin\AppSCAF\SCAF\SCAF\SCAF\obj\Debug\SCAF.Views.CotacaoView.CotacaoPageDetalhe.xaml.g.cs

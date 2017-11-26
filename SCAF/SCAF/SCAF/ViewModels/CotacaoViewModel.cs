@@ -59,7 +59,7 @@ namespace SCAF.ViewModels
                    FormaPagamento = "A vista",
                    Observacao ="Preço cotado a prazo 10% de desconto.",
                    Servico = Servicos.ListaServico().ToList().Find(cod => cod.Codigo.Equals("2154780")),
-                   NumeroContrato = 15465,
+                   NumeroContrato = Convert.ToString(15465),
                    Sc = ScServico.GetSc().ToList().Find(sc => sc.codigo.Contains("054875")).codigo,
                    StatusDaOferta = "Cotação Realizada",
                 }
