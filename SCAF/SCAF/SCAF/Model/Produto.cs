@@ -12,6 +12,7 @@ namespace SCAF.Model
         public string Nome { get; set; }
         public string categoria { get; set; }
         public string SubCategoria { get; set; }
+        public double valor { get; set; }
 
     }
 

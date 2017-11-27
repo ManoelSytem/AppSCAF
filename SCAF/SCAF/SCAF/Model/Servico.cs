@@ -10,6 +10,6 @@ namespace SCAF.Model
     {
         public string Codigo { get; set; }
         public string Nome { get; set; }
-        
+        public double valor { get; set; }
     }
 }

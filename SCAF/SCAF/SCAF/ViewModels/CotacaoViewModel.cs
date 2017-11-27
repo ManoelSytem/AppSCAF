@@ -11,6 +11,17 @@ namespace SCAF.ViewModels
 {
     public sealed class CotacaoViewModel : NotificarBase
     {
+        private DateTime fromMiminumDate;
+        public DateTime FromMiminumDate
+        {
+            get { return fromMiminumDate; }
+            set
+            {
+
+                fromMiminumDate = value;
+                Notificar();
+            }
+        }
         public SolicitacaoCompraService ScServico;
         private ProdutoServico Produtos;
         private RepositorioServico Servicos;
@@ -28,6 +39,7 @@ namespace SCAF.ViewModels
         }
         public CotacaoViewModel()
         {
+            FromMiminumDate = DateTime.Today;
             Produtos = new ProdutoServico();
             Servicos = new RepositorioServico();
             ScServico = new SolicitacaoCompraService();
@@ -81,7 +93,7 @@ namespace SCAF.ViewModels
 
             foreach (var i in ListServico)
             {
-                ListaProdutoServico.Add("Serviço-"+ i.Nome);
+                ListaProdutoServico.Add("Serviço-"+i.Nome);
             }
 
             return ListaProdutoServico;

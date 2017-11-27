@@ -62,13 +62,15 @@
             <Picker x:Name="ScPicker" Title="Solicitação de Compra"
                     SelectedIndexChanged="ExibirFormularioTipoCotacao"></Picker>
             <Entry Placeholder="Observação" x:Name="txtObservacao" Text="{Binding Observacao, Mode=TwoWay}" />
+            <Label   Text="Custo"
+                               Margin="3"
+                               FontSize="16" />
             <Entry IsEnabled="False" Keyboard="Numeric" Placeholder="Custo R$ 0,00" x:Name="txtCusto" Text="{Binding Custo,Mode=TwoWay}"/>
-            <Entry Keyboard="Numeric" Placeholder="Desconto" x:Name="txtDesconto" Text="{Binding Desconto,Mode=TwoWay}"/>
+            <Entry Keyboard="Numeric" Placeholder="Desconto" x:Name="txtDesconto" TextChanged="AtualizarCusto" Text="{Binding Desconto,Mode=TwoWay}"/>
             <Label   Text="Data Límite da oferta"
                                Margin="3"
                                FontSize="16" />
-            <DatePicker  x:Name="DataLimiteDaOferta" ></DatePicker>
-
+            <DatePicker  x:Name="DataLimiteDaOferta" MinimumDate="{Binding FromMiminumDate}" ></DatePicker>
             <Picker  x:Name="FornecedorPicker" Title="Fornecedor"
                      SelectedIndexChanged="ObterProdutoOuServicoPorFornecedor"></Picker>
             <Picker  x:Name="FormaPgtoPicker" Title="Forma de Pagamento"></Picker>
@@ -78,22 +80,22 @@
                      SelectedIndexChanged="ProdutoPicker_SelectedIndexChanged"></Picker>
             <Entry  IsVisible="False"  Keyboard="Numeric" Placeholder="Digite o nome  do Produto" x:Name="txtNovoProduto" />
             <Entry  Keyboard="Numeric" Placeholder="Quantidade" x:Name="txtQuantidade" />
-            <Entry  Keyboard="Numeric" Placeholder="Valor" x:Name="txtValorProd" />
+            <Entry  Keyboard="Numeric" Placeholder="Valor" TextChanged="AtualizarCusto" x:Name="txtValorProd" />
             </StackLayout>
                 <!-- fim-->
             <!--Cotação de Serviço-->
             <StackLayout IsVisible="False" x:Name="FormCotacaoServico">
             <Picker    x:Name="ServicoPicker" Title="Serviço"></Picker>
             <Entry     Keyboard="Numeric" Placeholder="Numero do Contrato" x:Name="txtContrato" />
-           <Entry  Keyboard="Numeric" Placeholder="Valor" x:Name="txtValorServico" />
+                    <Entry  Keyboard="Numeric" Placeholder="Valor" TextChanged="AtualizarCusto" x:Name="txtValorServico" />
                     <Label     Text="Data Ínicio"
                                Margin="3"
                                FontSize="14" />
-            <DatePicker  x:Name="DataInicioCotacaoDataPicker" ></DatePicker>
+                    <DatePicker  x:Name="DataInicioCotacaoDataPicker" MinimumDate="{Binding FromMiminumDate}" ></DatePicker>
             <Label  Text="Data Fim"
                                Margin="3"
                                FontSize="14" />
-            <DatePicker  x:Name="DataFimCotacaoDataPicker" ></DatePicker>
+                    <DatePicker  x:Name="DataFimCotacaoDataPicker" MinimumDate="{Binding FromMiminumDate}" ></DatePicker>
             <!-- fim-->
                 </StackLayout>
                 <Button Text="Enviar Cotação"

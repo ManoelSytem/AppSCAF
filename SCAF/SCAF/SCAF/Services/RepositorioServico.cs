@@ -25,7 +25,8 @@ namespace SCAF.Services
             ListSevico.Add(new Servico()
             {
                  Nome = "Outdoor",
-                 Codigo  = "2154780"
+                 Codigo  = "2154780",
+                 valor = 3500.00
             });
 
 
@@ -33,13 +34,14 @@ namespace SCAF.Services
             {
                 Nome = "Artigos de Decoração: Molduras",
                 Codigo = "2154780",
-
+                valor = 900.00,
             });
 
             ListSevico.Add(new Servico()
             {
                 Nome = "Advocacia Ambiental",
                 Codigo = "2154780",
+                valor = 5.000
 
             });
 
@@ -52,9 +54,16 @@ namespace SCAF.Services
 
             ListSevico.Add(new Servico()
             {
+                Nome = "Gerador energia para comércio e serviços",
+                Codigo = "2154780",
+                valor = 10.000
+            });
+
+            ListSevico.Add(new Servico()
+            {
                 Nome = "Alarmes de Segurança",
                 Codigo = "2154780",
-
+                valor = 1.500
             });
 
             return ListSevico;
