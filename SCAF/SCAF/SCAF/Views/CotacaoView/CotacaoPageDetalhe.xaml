@@ -3,59 +3,85 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SCAF.Views.CotacaoView.CotacaoPageDetalhe" Title="Cotação Detalhe">
     <ContentPage.Content>
-            <ScrollView>
-                <StackLayout x:Name="stackCotacao">
-                    <Label Text="Solicitante de Compra"
+        <ScrollView>
+            <StackLayout x:Name="stackCotacao" BackgroundColor="White"  Margin="8">
+                <Label Text="Solicitante de Compra"
                                Margin="3"
                                FontAttributes="Bold"
                                FontSize="Medium" />
-                    <Label x:Name="lblSolicao"
+                <Label x:Name="lblSolicitacao"
                                Margin="3"
                                FontSize="Medium" />
-                    <Label Text="Observação"
-                               Margin="3"
-                               FontAttributes="Bold"
-                               FontSize="Medium" />
-                    <Label x:Name="lblObservacao"
-                               Margin="3"
-                               FontSize="Medium" />
-                    <Label Text="Custo"
+                <Label Text="Observação"
                                Margin="3"
                                FontAttributes="Bold"
                                FontSize="Medium" />
-                    <Label  x:Name="lblCusto"
+                <Label x:Name="lblObservacao"
                                Margin="3"
                                FontSize="Medium" />
-                    <Label Text="Desconto"
+                <Label Text="Custo"
                                Margin="3"
                                FontAttributes="Bold"
                                FontSize="Medium" />
-                    <Label x:Name="lblDesconto"
+                <Label  x:Name="lblCusto"
+                               Margin="3"
+                               FontSize="Medium" />
+                <Label Text="Desconto"
+                               Margin="3"
+                               FontAttributes="Bold"
+                               FontSize="Medium" />
+                <Label x:Name="lblDesconto"
                                Margin="3"
                                FontSize="Medium" />
 
-                    <Label Text="Data da Limite da Oferta"
+                <Label Text="Data da Limite da Oferta"
                                Margin="3"
                                FontAttributes="Bold"
                                FontSize="Medium" />
-                    <Label x:Name="lblDataLimiteOferta" 
+                <Label x:Name="lblDataLimiteOferta" 
                                Margin="3"
                                FontSize="Medium" />
-                    <Label Text="Fornecedor"
-                               Margin="3"
-                               FontAttributes="Bold"
-                               FontSize="Medium" />
-                    <Label x:Name="lblFornecedor" 
-                               Margin="3"
-                               FontSize="Medium" />
-                    <Label Text="Forma de Pagamento"
+                <Label Text="Fornecedor"
                                Margin="3"
                                FontAttributes="Bold"
                                FontSize="Medium" />
-                    <Label x:Name="lblfrmPgto"
+                <Label x:Name="lblFornecedor" 
+                               Margin="3"
+                               FontSize="Medium" />
+                <Label Text="Forma de Pagamento"
+                               Margin="3"
+                               FontAttributes="Bold"
+                               FontSize="Medium" />
+                <Label x:Name="lblfrmPgto"
+                               Margin="3"
+                               FontSize="Medium" />
+                <StackLayout IsVisible="False" x:Name="stackCotacaoServico"
+                          BackgroundColor="White"  Margin="8">
+                    <Label Text="Nome do Serviço"
+                               Margin="3"
+                               FontAttributes="Bold"
+                               FontSize="Medium" />
+                    <Label x:Name="lblnomeservico"
+                               Margin="3"
+                               FontSize="Medium" />
+                    <Label Text="Numero do Contrato"
+                               Margin="3"
+                               FontAttributes="Bold"
+                               FontSize="Medium" />
+                    <Label x:Name="lblContrato"
                                Margin="3"
                                FontSize="Medium" />
                 </StackLayout>
-            </ScrollView>
+                <StackLayout IsVisible="False" x:Name="stackCotacaoProduto" BackgroundColor="White"  Margin="8">
+                    <Label Text="Nome do Produto"
+                               Margin="3"
+                               FontAttributes="Bold"
+                               FontSize="Medium" />
+                    <Label x:Name="lblnomeProduto"
+                               Margin="3"
+                               FontSize="Medium" />
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

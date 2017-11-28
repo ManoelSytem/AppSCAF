@@ -34,7 +34,7 @@
             <Entry Text="{Binding Password}" x:Name="Entry_Senha"  IsPassword="true" Placeholder="Senha"/>
             <Button 
                     Clicked="EntrarProcedure"
-                    Text="Login"
+                    Text="Entrar"
                     BackgroundColor="DodgerBlue"
                     TextColor="White"
                     FontSize="30"

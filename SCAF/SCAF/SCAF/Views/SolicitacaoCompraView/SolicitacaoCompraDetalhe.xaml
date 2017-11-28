@@ -10,7 +10,7 @@
     </ContentPage.BindingContext>
     <ContentPage.Content>
         <ScrollView>
-        <StackLayout>
+            <StackLayout BackgroundColor="White"  Margin="8">
             <Label Text="Solicitante"
                                Margin="3"
                                FontAttributes="Bold"
